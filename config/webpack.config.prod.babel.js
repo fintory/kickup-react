@@ -1,16 +1,17 @@
+import webpack from 'webpack'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import baseConfig from './webpack.config.common.js'
 
-import webpack from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import baseConfig from './webpack.config.common.js';
+const { NODE_ENV = 'staging' } = process.env
 
 module.exports = {
   ...baseConfig,
+  mode: 'production',
   devtool: 'source-map',
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.bundle.js' }),
-    new webpack.DefinePlugin(JSON.stringify({
-      'process.env': JSON.stringify({ NODE_ENV: 'production' }),
-    })),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(NODE_ENV),
+    }),
     new HtmlWebpackPlugin({
       inject: true,
       template: 'index.html',
@@ -27,6 +28,20 @@ module.exports = {
         minifyURLs: true,
       },
     }),
-    new webpack.optimize.UglifyJsPlugin(),
   ],
-};
+  performance: {
+    hints: false,
+  },
+  optimization: {
+    minimize: true,
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
+  },
+}
