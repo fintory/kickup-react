@@ -136,6 +136,10 @@
     "includeGlob": [
       "client/**/*.js"
     ],
+    "excludeGlob": [
+      "node_modules/",
+      "client/**/*.test.js"
+    ],
     "type": [
       "text"
     ],
