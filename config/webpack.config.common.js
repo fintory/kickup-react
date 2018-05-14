@@ -2,29 +2,15 @@ import path from 'path'
 import paths from './paths'
 
 const { NODE_ENV } = process.env
+const isDev = NODE_ENV === 'development'
 
 module.exports = {
   context: paths.appBuild,
-  entry: {
-    jsx: [NODE_ENV === 'development' && 'react-hot-loader/patch', './index.js'].filter(
-      entry => !!entry
-    ),
-    vendor: [
-      'react',
-      'react-dom',
-      'react-redux',
-      'react-router',
-      'react-router-dom',
-      'react-router-redux',
-      'redux',
-      'history',
-      'classnames',
-      'normalizr',
-    ],
-  },
+  entry: [isDev && 'react-hot-loader/patch', './index.js'].filter(e => e),
   output: {
     path: paths.outputPath,
     filename: paths.outputName,
+    publicPath: '/',
   },
   module: {
     strictExportPresence: NODE_ENV === 'production',
