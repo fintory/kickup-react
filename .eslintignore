@@ -1,2 +1,5 @@
 blueprints/
 node_modules/
+server/
+client/assets/
+**/*.{jpg,svg,png}

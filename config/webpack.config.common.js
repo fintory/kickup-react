@@ -1,36 +1,16 @@
+import path from 'path'
+import paths from './paths'
 
-import path from 'path';
-import paths from './paths';
-
-const { NODE_ENV } = process.env;
-
-const babelLoaders = (NODE_ENV === 'development')
-  ? ['react-hot-loader', 'babel-loader']
-  : ['babel-loader'];
+const { NODE_ENV } = process.env
+const isDev = NODE_ENV === 'development'
 
 module.exports = {
   context: paths.appBuild,
-  entry: {
-    jsx: [
-      './index.js',
-    ],
-    vendor: [
-      'react',
-      'react-dom',
-      'react-redux',
-      'react-router',
-      'react-router-dom',
-      'react-router-redux',
-      'redux',
-      'history',
-      'immutable',
-      'classnames',
-      'normalizr',
-    ],
-  },
+  entry: [isDev && 'react-hot-loader/patch', './index.js'].filter(e => e),
   output: {
     path: paths.outputPath,
     filename: paths.outputName,
+    publicPath: '/',
   },
   module: {
     strictExportPresence: NODE_ENV === 'production',
@@ -38,16 +18,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules|blueprints/,
-        use: babelLoaders,
-      },
-      {
-        test: /\.css$/,
-        exclude: /node_modules|blueprints/,
-        use: [
-          'style-loader',
-          'css-loader?modules&importLoaders=1&localIdentName=[local]___[hash:base64:5]',
-          'postcss-loader',
-        ],
+        use: ['babel-loader'],
       },
       {
         test: /\.css$/,
@@ -61,9 +32,13 @@ module.exports = {
     ],
   },
   resolve: {
-    modules: [
-      path.resolve('./'),
-      'node_modules',
-    ],
+    alias: {
+      app: path.resolve(paths.appBuild),
+      assets: path.resolve(paths.appBuild, 'assets'),
+      pages: path.resolve(paths.appBuild, 'pages'),
+      components: path.resolve(paths.appBuild, 'components'),
+      modules: path.resolve(paths.appBuild, 'modules'),
+    },
+    modules: [path.resolve('./'), 'node_modules'],
   },
-};
+}

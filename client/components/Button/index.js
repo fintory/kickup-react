@@ -1,69 +1,50 @@
 // @flow
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { css } from 'aphrodite'
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import Spin from 'react-spin';
-import { Link } from 'react-router-dom';
-import has from 'lodash/has';
-import invariant from 'invariant';
-import classnames from 'classnames/bind';
+import { spinConfig as defaultSpinConfig } from 'app/config.js'
+import Spin from 'components/Spin'
 
-import { spinConfig as defaultSpinConfig } from '../../config.js';
-import styles from './style.css';
+import styles from './style.js'
+import type { Props } from './types.js'
 
-const cx = classnames.bind(styles);
+export default function Button(allProps: Props): React$Node {
+  let Tag = 'button'
+  const { loading, spinConfig, ...props } = allProps
 
-export default function Button({ loading, spinConfig, ...props }: Object) {
-  let Tag = 'button';
+  if (Object.prototype.hasOwnProperty.call(props, 'to')) {
+    Tag = Link
 
-  if (has(props, 'to')) {
-    Tag = Link;
+    delete props.href
+    delete props.onClick
+  } else if (Object.prototype.hasOwnProperty.call(props, 'href')) {
+    Tag = 'a'
 
-    delete props.href;
-    delete props.onClick;
-  } else if (has(props, 'href')) {
-    Tag = 'a';
-
-    delete props.to;
-    delete props.onClick;
+    delete props.to
+    delete props.onClick
   }
 
   return (
     <Tag
       disabled={loading}
-      className={cx('main', { 'main--loading': loading })}
+      className={css(styles.button, !!loading && styles.button__loading)}
       {...props}
     >
       {/* Implement the spinner for loading activity */}
-      <span className={styles.main__spinner}>
+      <span className={css(styles.button__spinner, !!loading && styles['button__spinner--active'])}>
         <Spin stopped={!loading} config={{ ...defaultSpinConfig, ...spinConfig }} />
       </span>
 
       {/* Implement the children (content) of the button */}
-      <span className={styles.main__content}>
+      <span className={css(styles.button__content, !!loading && styles['button__spinner--active'])}>
         {props.children}
       </span>
     </Tag>
-  );
+  )
 }
 
 Button.defaultProps = {
   spinConfig: defaultSpinConfig,
   loading: false,
-  to: null,
-  href: null,
-  onClick: () =>
-    invariant(false, 'No `onClick`, `to` or `href` was defined. Used fallback, with a noop.'),
-};
-
-Button.propTypes = {
-  to: PropTypes.string,
-  loading: PropTypes.bool,
-  href: PropTypes.string,
-  onClick: PropTypes.func,
-  spinConfig: PropTypes.object,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-};
+}

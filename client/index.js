@@ -1,28 +1,33 @@
+// @flow
+import React from 'react'
+import { render } from 'react-dom'
+import ConnectedRouter from 'react-router-redux/es/ConnectedRouter'
+import { Provider } from 'react-redux'
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import initializeFastClick from 'react-fastclick';
-import { ConnectedRouter } from 'react-router-redux';
+import { store } from 'modules/store'
+import history from 'modules/history'
 
-import App from './pages';
-import store from './modules/store';
-import history from './modules/history';
+import './utils/globalStyles.js'
 
-/*
- * Add `react-fastclick` so mobile devices don't have any problems with to slow
- * clicks on UI elements
- */
-initializeFastClick();
+console.info('Application running in', process.env.NODE_ENV, 'mode.'); // eslint-disable-line
 
 /*
  * Render the React Pages into the actual DOM
  */
-ReactDOM.render(
-  <Provider store={store}>
-    <ConnectedRouter history={history}>
-      <App />
-    </ConnectedRouter>
-  </Provider>,
-  document.getElementById('root'),
-);
+
+const Root: React$StatelessFunctionalComponent<any> = require('pages/Root').default
+
+const MOUNT_NODE: ?HTMLElement = document.getElementById('root')
+
+if (MOUNT_NODE) {
+  render(
+    <Provider store={store}>
+      <ConnectedRouter history={history}>
+        <Root />
+      </ConnectedRouter>
+    </Provider>,
+    MOUNT_NODE
+  )
+} else {
+  throw new Error('Could not find MOUNT_NODE')
+}

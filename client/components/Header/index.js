@@ -1,11 +1,13 @@
+// @flow
+import React from 'react'
+import { css } from 'aphrodite'
 
-import React from 'react';
-import styles from './style.css';
+import styles from './style'
 
-export default function Header() {
+export default function Header(): React$Element<'header'> {
   return (
-    <header className={styles.main}>
-      <div className={styles.logo} />
+    <header className={css(styles.main)}>
+      <div className={css(styles.logo)} />
     </header>
-  );
+  )
 }
