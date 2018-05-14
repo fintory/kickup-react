@@ -36,7 +36,7 @@ jobs:
       - restore_cache: *restore-node-cache
       - run: *install-node-dependencies
       - save_cache: *save-node-cache
-      - run: yarn circular-dependencies
+      - run: yarn check-circular-dependencies
       - restore-cache: *restore-eslint-cache
       - run: yarn lint
       - save_cache: *save-eslint-cache
