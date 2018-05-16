@@ -1,6 +1,6 @@
 /* eslint consistent-return:0 */
 
-require('babel-register');
+require('babel-register')({ ignore: false });
 
 const express = require('express');
 const logger = require('./logger');
