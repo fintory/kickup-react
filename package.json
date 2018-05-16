@@ -103,6 +103,10 @@
     "globals": {
       "GLOBAL": true
     },
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/test/__mocks__/styleMock.js",
+      "\\.(png|jpg|gif|ttf|eot|svg)$": "<rootDir>/test/__mocks__/fileMock.js"
+    },
     "collectCoverage": true,
     "collectCoverageFrom": [
       "client/**/*.js",
