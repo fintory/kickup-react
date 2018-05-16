@@ -1,37 +1,46 @@
 {
-  "presets": ["es2015", "stage-0", "react", "flow"],
+  "presets": [
+    "@babel/preset-env",
+    [
+      "@babel/preset-stage-0",
+      {
+        "decoratorsLegacy": true
+      }
+    ],
+    "@babel/preset-react",
+    "@babel/preset-flow"
+  ],
   "plugins": [
     "react-hot-loader/babel",
-    ["module-resolver", {
-      "root": ["./client"],
-      "extensions": [".js", ".jsx"],
-      "alias": {
-        "app": "./client",
-        "assets": "./client/assets",
-        "pages": "./client/pages",
-        "components": "./client/components",
-        "modules": "./client/modules",
-        "constants": "./client/constants",
-        "utils": "./client/utils"
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./client"
+        ],
+        "extensions": [
+          ".js",
+          ".jsx"
+        ],
+        "alias": {
+          "app": "./client",
+          "assets": "./client/assets",
+          "pages": "./client/pages",
+          "components": "./client/components",
+          "modules": "./client/modules",
+          "constants": "./client/constants",
+          "utils": "./client/utils"
+        }
       }
-    }],
+    ],
     "transform-decorators-legacy",
-    "transform-runtime",
-    "transform-object-assign",
-    "lodash"
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-transform-object-assign"
   ],
   "env": {
-    "production": {
-      "plugins": [
-        "transform-es2015-modules-commonjs",
-        "transform-remove-console",
-        "transform-react-remove-prop-types"
-      ]
-    },
     "test": {
       "plugins": [
-        "transform-es2015-modules-commonjs",
-        "transform-react-remove-prop-types"
+        "@babel/plugin-transform-modules-commonjs"
       ]
     }
   }
