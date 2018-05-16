@@ -24,14 +24,12 @@
     "production": {
       "plugins": [
         "transform-es2015-modules-commonjs",
-        "transform-remove-console",
-        "transform-react-remove-prop-types"
+        "transform-remove-console"
       ]
     },
     "test": {
       "plugins": [
-        "transform-es2015-modules-commonjs",
-        "transform-react-remove-prop-types"
+        "transform-es2015-modules-commonjs"
       ]
     }
   }
