@@ -100,9 +100,6 @@
       "./client",
       "./test"
     ],
-    "globals": {
-      "GLOBAL": true
-    },
     "collectCoverage": true,
     "collectCoverageFrom": [
       "client/**/*.js",
