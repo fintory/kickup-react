@@ -1,9 +1,9 @@
 // @flow
 import React from 'react'
 import { render } from 'react-dom'
-import ConnectedRouter from 'react-router-redux/es/ConnectedRouter'
 import { Provider } from 'react-redux'
 
+import ConnectedRouter from 'pages/Router'
 import { store } from 'modules/store'
 import history from 'modules/history'
 
