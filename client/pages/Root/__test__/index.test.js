@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 import { shallow, mount } from 'enzyme'
-import MemoryRouter from 'react-router-dom/es/MemoryRouter'
+import MemoryRouter from 'react-router-dom/MemoryRouter'
 
 import { Home, About, NotFound } from 'pages'
 import Root from '../'
