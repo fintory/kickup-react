@@ -3,7 +3,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { css } from 'aphrodite'
 
-import { spinConfig as defaultSpinConfig } from 'app/config.js'
 import Spin from 'components/Spin'
 
 import styles from './style.js'
@@ -11,7 +10,7 @@ import type { Props } from './types.js'
 
 export default function Button(allProps: Props): React$Node {
   let Tag = 'button'
-  const { loading, spinConfig, ...props } = allProps
+  const { loading, ...props } = allProps
 
   if (Object.prototype.hasOwnProperty.call(props, 'to')) {
     Tag = Link
@@ -45,6 +44,5 @@ export default function Button(allProps: Props): React$Node {
 }
 
 Button.defaultProps = {
-  spinConfig: defaultSpinConfig,
   loading: false,
 }
