@@ -32,7 +32,9 @@ export default StyleSheet.create({
     },
   },
   button__spinner: {
-    display: 'inline-block',
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
     width: '100%',
     transitionDuration: '250ms',
     position: 'absolute',

@@ -1,4 +1,5 @@
 // @flow
+import uuid from 'uuid/v1'
 import { CREATE_TASK, REMOVE_TASK } from './actionTypes'
 import type { Action } from './types'
 
@@ -9,7 +10,7 @@ import type { Action } from './types'
  */
 export function createTask(name: string): Action {
   // Create a unique ID for the task, so you don't need to do this
-  const id = ((1 + Math.random()) * 0x10000 || 0).toString(16).substring(1)
+  const id = uuid()
 
   return { type: CREATE_TASK, payload: { id, name } }
 }

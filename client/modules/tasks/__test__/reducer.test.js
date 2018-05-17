@@ -7,17 +7,30 @@ describe('tasks reducer', () => {
     expect(reducer(undefined, {})).toEqual(initialState)
   })
 
-  it('adds `action.payload` to `list` on `CREATE_TASK`', () => {
-    const state = { list: [] }
-    const action = { type: CREATE_TASK, payload: { id: '1', name: 'Test' } }
+  describe('CREATE_TASK', () => {
+    const type = CREATE_TASK
 
-    expect(reducer(state, action)).toHaveProperty('list', [action.payload])
+    it('adds `action.payload` to `list`', () => {
+      const state = { list: [] }
+      const action = { type, payload: { id: '1', name: 'Test' } }
+
+      expect(reducer(state, action)).toHaveProperty('list', [action.payload])
+    })
+
+    it("doesn't add `action.payload` to `list` when payload isn't defined", () => {
+      const state = { list: [] }
+      const action = { type }
+
+      expect(reducer(state, action)).toHaveProperty('list', [])
+    })
   })
 
-  it('adds `action.payload` to `list` on `REMOVE_TASK`', () => {
-    const state = { list: [{ id: '1', name: 'Test' }] }
-    const action = { type: REMOVE_TASK, id: '1' }
+  describe('REMOVE_TASK', () => {
+    it('removes `action.id` from `list`', () => {
+      const state = { list: [{ id: '1', name: 'Test' }] }
+      const action = { type: REMOVE_TASK, id: '1' }
 
-    expect(reducer(state, action)).toHaveProperty('list', [])
+      expect(reducer(state, action)).toHaveProperty('list', [])
+    })
   })
 })
