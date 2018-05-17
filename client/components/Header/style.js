@@ -10,7 +10,7 @@ export default StyleSheet.create({
     margin: '0 auto',
     width: 51,
     height: 45,
-    backgroundImage: 'url(../../assets/logo.png)',
+    backgroundImage: `url(${require('assets/logo.png')})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: '51px 45px',
