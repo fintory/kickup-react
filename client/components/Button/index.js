@@ -33,7 +33,7 @@ export default function Button(allProps: Props): React$Node {
     >
       {/* Implement the spinner for loading activity */}
       <span className={css(styles.button__spinner, !!loading && styles['button__spinner--active'])}>
-        <Spin stopped={!loading} config={{ ...defaultSpinConfig, ...spinConfig }} />
+        <Spin />
       </span>
 
       {/* Implement the children (content) of the button */}
