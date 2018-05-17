@@ -37,7 +37,7 @@ Go to the GitHub repository settings of your project and then navigate to the ta
 
 #### This should look like this:
 
-![](protected-branch.jpg | width=769x719)
+![](protected-branch.jpg)
 
 ## Push your first commit
 
