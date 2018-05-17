@@ -3,7 +3,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { css } from 'aphrodite'
 
-import { spinConfig as defaultSpinConfig } from 'app/config.js'
 import Spin from 'components/Spin'
 
 import styles from './style.js'
@@ -11,7 +10,7 @@ import type { Props } from './types.js'
 
 export default function Button(allProps: Props): React$Node {
   let Tag = 'button'
-  const { loading, spinConfig, ...props } = allProps
+  const { loading, ...props } = allProps
 
   if (Object.prototype.hasOwnProperty.call(props, 'to')) {
     Tag = Link
@@ -33,7 +32,7 @@ export default function Button(allProps: Props): React$Node {
     >
       {/* Implement the spinner for loading activity */}
       <span className={css(styles.button__spinner, !!loading && styles['button__spinner--active'])}>
-        <Spin stopped={!loading} config={{ ...defaultSpinConfig, ...spinConfig }} />
+        <Spin />
       </span>
 
       {/* Implement the children (content) of the button */}
@@ -45,6 +44,5 @@ export default function Button(allProps: Props): React$Node {
 }
 
 Button.defaultProps = {
-  spinConfig: defaultSpinConfig,
   loading: false,
 }
