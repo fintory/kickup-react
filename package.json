@@ -13,6 +13,7 @@
     "flow-coverage": "flow-coverage-report --strict-coverage",
     "check-circular-dependencies": "madge --circular client/index.js",
     "start": "NODE_ENV=development webpack-dev-server -d --hot --inline --progress --config config/webpack.config.dev.babel.js",
+    "start:production": "serve -s static/",
     "build": "NODE_ENV=production webpack --progress --colors --config config/webpack.config.prod.babel.js"
   },
   "license": "MIT",
