@@ -20,7 +20,7 @@ declare module 'react-router-redux' {
   }
 }
 
-declare module 'react-router-redux/es/middleware' {
+declare module 'react-router-redux/lib/middleware' {
   declare module.exports: $Exports<'react-router-redux/middleware'>
 }
 
@@ -28,7 +28,7 @@ declare module 'react-router-redux/middleware' {
   declare module.exports: Function
 }
 
-declare module 'react-router-redux/es/reducer' {
+declare module 'react-router-redux/lib/reducer' {
   declare module.exports: $Exports<'react-router-redux/reducer'>
 }
 
