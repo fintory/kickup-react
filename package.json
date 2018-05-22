@@ -14,7 +14,8 @@
     "check-circular-dependencies": "madge --circular client/index.js",
     "start": "NODE_ENV=development webpack-dev-server -d --hot --inline --progress --config config/webpack.config.dev.babel.js",
     "start:production": "serve -s static/",
-    "build": "NODE_ENV=production webpack --progress --colors --config config/webpack.config.prod.babel.js"
+    "build": "NODE_ENV=production webpack --progress --colors --config config/webpack.config.prod.babel.js",
+    "clean": "rimraf static/"
   },
   "license": "MIT",
   "devDependencies": {
@@ -60,6 +61,7 @@
     "madge": "^3.0.1",
     "minimist": "^1.2.0",
     "null-loader": "^0.1.1",
+    "ora": "^2.1.0",
     "prettier": "^1.12.1",
     "react-test-renderer": "^16.0.0",
     "style-loader": "^0.21.0",
@@ -96,8 +98,7 @@
   },
   "jest": {
     "roots": [
-      "./client",
-      "./test"
+      "./client"
     ],
     "collectCoverage": true,
     "collectCoverageFrom": [
@@ -126,8 +127,8 @@
       "./setupTests.js"
     ],
     "moduleNameMapper": {
-      "\\.(css|less)$": "<rootDir>/test/__mocks__/styleMock.js",
-      "\\.(png|jpg|gif|ttf|eot|svg)$": "<rootDir>/test/__mocks__/fileMock.js"
+      "\\.(css|less)$": "<rootDir>/internals/test/__mocks__/styleMock.js",
+      "\\.(png|jpg|gif|ttf|eot|svg)$": "<rootDir>/internals/test/__mocks__/fileMock.js"
     },
     "transformIgnorePatterns": [
       "node_modules/(?!(react-router|react-router-dom|react-router-redux)/)"
