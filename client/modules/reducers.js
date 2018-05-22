@@ -1,6 +1,6 @@
 // @flow
 import { combineReducers } from 'redux'
-import { routerReducer } from 'react-router-redux/reducer'
+import { routerReducer } from 'react-router-redux/lib/reducer'
 import type { CombinedReducer } from 'redux'
 
 import { reducer as tasksReducer } from './tasks'
