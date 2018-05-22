@@ -31,6 +31,9 @@ Go to circleci.com, login and add the repository you want to enable the CI for. 
 
 Go to coveralls.io, login and add the repository you want to enable a coverage report for. Be sure to change the repository in the README.md also.
 
+To make Coveralls work, you may add the Repository Token and Service Name in your CircleCI settings.
+Your repository token (from the Coveralls.io Settings page) needs to go into the "Environment Variables" settings as `COVERALLS_REPO_TOKEN`. The `COVERALLS_SERVICE_NAME` needs to be `circleci`.
+
 ## Setup of GitHub Repository
 
 Go to the GitHub repository settings of your project and then navigate to the tab "Branches". After this, add a [Branch protection](https://help.github.com/articles/about-protected-branches/) for each of the "base" branches (mostly "develop" and "master").
