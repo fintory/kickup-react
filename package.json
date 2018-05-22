@@ -13,6 +13,7 @@
     "flow-coverage": "flow-coverage-report --strict-coverage",
     "check-circular-dependencies": "madge --circular client/index.js",
     "start": "NODE_ENV=development webpack-dev-server -d --hot --inline --progress --config config/webpack.config.dev.babel.js",
+    "start:production": "serve -s static/",
     "build": "NODE_ENV=production webpack --progress --colors --config config/webpack.config.prod.babel.js"
   },
   "license": "MIT",
@@ -124,6 +125,10 @@
     "setupFiles": [
       "./setupTests.js"
     ],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/test/__mocks__/styleMock.js",
+      "\\.(png|jpg|gif|ttf|eot|svg)$": "<rootDir>/test/__mocks__/fileMock.js"
+    },
     "transformIgnorePatterns": [
       "node_modules/(?!(react-router|react-router-dom|react-router-redux)/)"
     ]
