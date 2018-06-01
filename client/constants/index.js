@@ -1,3 +1,5 @@
 // @flow
 
-export { COLORS } from './colors'
+import * as colors from './colors'
+
+export { colors }

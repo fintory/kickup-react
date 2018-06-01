@@ -1,13 +1,13 @@
 // @flow
 import { StyleSheet } from 'aphrodite'
-import { COLORS } from 'constants'
+import { colors } from 'constants'
 
 export default StyleSheet.create({
   button: {
-    backgroundColor: '#808080',
-    color: COLORS.white,
+    backgroundColor: colors.grey,
+    color: colors.white,
     textDecoration: 'none',
-    border: '1px solid #707070',
+    border: `1px solid ${colors.grey}`,
     fontSize: '1rem',
     lineHeight: '1rem',
     padding: '.75rem 1.5rem',
@@ -24,7 +24,7 @@ export default StyleSheet.create({
     },
 
     ':not([disabled]):hover': {
-      backgroundColor: '#707070',
+      backgroundColor: `lighten(${colors.grey}, 10)`,
     },
 
     '[disabled]': {

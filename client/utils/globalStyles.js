@@ -1,7 +1,7 @@
 // @flow
 import { StyleSheet } from 'aphrodite/no-important'
 
-import { COLORS } from 'constants'
+import { colors } from 'constants'
 
 const globalSelectorHandler = (
   selector: string[],
@@ -41,7 +41,7 @@ const styles = extended.StyleSheet.create({
       fontFamily:
         '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif',
       lineHeight: 1.4,
-      background: COLORS.white,
+      background: colors.white,
       color: '#222',
       margin: '0 auto',
       fontSmoothing: 'antialiased',
