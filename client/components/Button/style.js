@@ -1,10 +1,11 @@
 // @flow
 import { StyleSheet } from 'aphrodite'
+import { COLORS } from 'constants'
 
 export default StyleSheet.create({
   button: {
     backgroundColor: '#808080',
-    color: 'white',
+    color: COLORS.white,
     textDecoration: 'none',
     border: '1px solid #707070',
     fontSize: '1rem',

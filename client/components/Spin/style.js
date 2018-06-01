@@ -1,6 +1,8 @@
 // @flow
 import { StyleSheet } from 'aphrodite/no-important'
 
+import { COLORS } from 'constants'
+
 const rotate = {
   from: {
     transform: 'rotate(0deg)',
@@ -25,13 +27,13 @@ export default StyleSheet.create({
     width: 18,
     height: 18,
     margin: 2,
-    border: '2px solid #fff',
+    border: `2px solid ${COLORS.white}`,
     borderRadius: '50%',
     animationName: [rotate],
     animationDuration: '1.2s',
     animationIterationCount: 'infinite',
     animationTimingFunction: 'cubic-bezier(0.5, 0, 0.5, 1)',
-    borderColor: '#fff transparent transparent transparent',
+    borderColor: `${COLORS.white} transparent transparent transparent`,
 
     ':nth-child(1)': {
       animationDelay: '-0.45s',
