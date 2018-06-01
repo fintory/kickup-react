@@ -1,9 +1,10 @@
 // @flow
 import { StyleSheet } from 'aphrodite'
+import { lighten } from 'polished'
 
 export default StyleSheet.create({
   button: {
-    backgroundColor: '#808080',
+    backgroundColor: '#000',
     color: 'white',
     textDecoration: 'none',
     border: '1px solid #707070',
@@ -23,7 +24,7 @@ export default StyleSheet.create({
     },
 
     ':not([disabled]):hover': {
-      backgroundColor: '#707070',
+      backgroundColor: lighten(0.2, '#000'),
     },
 
     '[disabled]': {
