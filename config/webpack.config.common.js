@@ -38,6 +38,7 @@ module.exports = {
       pages: path.resolve(paths.appBuild, 'pages'),
       components: path.resolve(paths.appBuild, 'components'),
       modules: path.resolve(paths.appBuild, 'modules'),
+      constants: path.resolve(paths.appBuild, 'constants'),
     },
     modules: [path.resolve('./'), 'node_modules'],
   },
