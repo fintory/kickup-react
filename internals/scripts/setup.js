@@ -21,7 +21,7 @@ async function removeGitFolder(): Promise<*> {
 }
 
 async function installDependencies(): Promise<*> {
-  return wrapPromise(resolve =>
+  return wrapPromise('Install dependencies', resolve =>
     exec('yarn --version', (err, stdout) => {
       if (parseFloat(stdout) < 0.15 || err || process.env.USE_YARN === 'false') {
         exec('npm install', resolve)
@@ -33,13 +33,13 @@ async function installDependencies(): Promise<*> {
 }
 
 async function initializeGitRepository(): Promise<*> {
-  return wrapPromise(resolve =>
+  return wrapPromise('Initialize git repository', resolve =>
     exec('git init && git add . && git commit -m "Initial commit"', resolve)
   )
 }
 
 async function removeThisFile(): Promise<*> {
-  return wrapPromise(resolve => rimraf(`${__dirname}/setup.js`, resolve))
+  return wrapPromise('Remove `setup.js`', resolve => rimraf(`${__dirname}/setup.js`, resolve))
 }
 
 ;(async function setup(): Promise<*> {
