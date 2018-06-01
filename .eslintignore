@@ -1,5 +1,7 @@
 blueprints/
 node_modules/
-server/
+internals/webpack/
+internals/test/
 client/assets/
+
 **/*.{jpg,svg,png}

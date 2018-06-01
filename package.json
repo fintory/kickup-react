@@ -12,24 +12,25 @@
     "flow": "flow",
     "flow-coverage": "flow-coverage-report --strict-coverage",
     "check-circular-dependencies": "madge --circular client/index.js",
-    "start": "NODE_ENV=development webpack-dev-server -d --hot --inline --progress --config config/webpack.config.dev.babel.js",
+    "start": "NODE_ENV=development webpack-dev-server -d --hot --inline --progress --config internals/webpack/development.config.babel.js",
     "start:production": "serve -s static/",
-    "build": "NODE_ENV=production webpack --progress --colors --config config/webpack.config.prod.babel.js"
+    "build": "NODE_ENV=production webpack --progress --colors --config internals/webpack/production.config.babel.js",
+    "clean": "rimraf static/"
   },
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "7.0.0-beta.47",
-    "@babel/core": "7.0.0-beta.47",
-    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.47",
-    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.47",
-    "@babel/plugin-transform-object-assign": "7.0.0-beta.47",
-    "@babel/plugin-transform-runtime": "7.0.0-beta.47",
-    "@babel/preset-env": "7.0.0-beta.47",
-    "@babel/preset-flow": "7.0.0-beta.47",
-    "@babel/preset-react": "7.0.0-beta.47",
-    "@babel/preset-stage-0": "7.0.0-beta.47",
-    "@babel/register": "7.0.0-beta.47",
-    "@babel/runtime": "7.0.0-beta.47",
+    "@babel/cli": "7.0.0-beta.49",
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.49",
+    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.49",
+    "@babel/plugin-transform-object-assign": "7.0.0-beta.49",
+    "@babel/plugin-transform-runtime": "7.0.0-beta.49",
+    "@babel/preset-env": "7.0.0-beta.49",
+    "@babel/preset-flow": "7.0.0-beta.49",
+    "@babel/preset-react": "7.0.0-beta.49",
+    "@babel/preset-stage-0": "7.0.0-beta.49",
+    "@babel/register": "7.0.0-beta.49",
+    "@babel/runtime": "7.0.0-beta.49",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^22.4.3",
@@ -60,6 +61,7 @@
     "madge": "^3.0.1",
     "minimist": "^1.2.0",
     "null-loader": "^0.1.1",
+    "ora": "^2.1.0",
     "prettier": "^1.12.1",
     "react-test-renderer": "^16.0.0",
     "style-loader": "^0.21.0",
@@ -97,7 +99,7 @@
   "jest": {
     "roots": [
       "./client",
-      "./test"
+      "./internals/test"
     ],
     "collectCoverage": true,
     "collectCoverageFrom": [
@@ -123,11 +125,11 @@
     },
     "coverageDirectory": "./coverage",
     "setupFiles": [
-      "./setupTests.js"
+      "./internals/test/setupTests.js"
     ],
     "moduleNameMapper": {
-      "\\.(css|less)$": "<rootDir>/test/__mocks__/styleMock.js",
-      "\\.(png|jpg|gif|ttf|eot|svg)$": "<rootDir>/test/__mocks__/fileMock.js"
+      "\\.(css|less)$": "<rootDir>/internals/test/__mocks__/styleMock.js",
+      "\\.(png|jpg|gif|ttf|eot|svg)$": "<rootDir>/internals/test/__mocks__/fileMock.js"
     },
     "transformIgnorePatterns": [
       "node_modules/(?!(react-router|react-router-dom|react-router-redux)/)"

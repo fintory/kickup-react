@@ -1,5 +1,5 @@
 import path from 'path'
-import paths from './paths'
+import paths from '../paths'
 
 const { NODE_ENV } = process.env
 const isDev = NODE_ENV === 'development'
