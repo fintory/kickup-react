@@ -1,5 +1,6 @@
 [ignore]
 .*/test/.*
+.*/internals/server/.*
 .*/node_modules/graphviz/documentation.json
 .*/node_modules/eslint-plugin-jsx-a11y/src/.*
 .*/**/*.test.js
