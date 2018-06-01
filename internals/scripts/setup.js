@@ -1,8 +1,8 @@
 // @flow
 /* eslint-disable import/no-extraneous-dependencies */
-import rimraf from 'rimraf'
-import ora from 'ora'
-import { exec } from 'child_process'
+const rimraf = require('rimraf')
+const ora = require('ora')
+const { exec } = require('child_process')
 /* eslint-enable import/no-extraneous-dependencies */
 
 async function wrapPromise(name: string, callback: Function): Promise<*> {
