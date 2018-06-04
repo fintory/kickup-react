@@ -1,12 +1,12 @@
 // @flow
 import React from 'react'
-import type { Props } from 'react-helmet'
+import type { HelmetProps } from './types'
 
 import conf from '../config.json'
 
-export default function config(path: string): * {
-  const paths = path.split('.')
-  let current = conf
+export default function config(path: string): ?string {
+  const paths: Array<string> = path.split('.')
+  let current: * = conf
   let i
 
   for (i = 0; i < paths.length; i += 1) {
@@ -19,8 +19,10 @@ export default function config(path: string): * {
   return current
 }
 
-export const helmetDefaults: Props = {
+const projectName: string = config('projectName') || ''
+
+export const helmetDefaults: HelmetProps = {
   title: 'Home',
-  titleTemplate: `${config('projectName')} – %s`,
+  titleTemplate: projectName !== '' ? `${projectName} – %s` : '%s',
   children: [<html key="html" lang="en" amp />],
 }

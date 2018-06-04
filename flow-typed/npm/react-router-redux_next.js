@@ -52,5 +52,6 @@ declare module 'react-router-redux/reducer' {
 
   declare module.exports: {
     routerReducer: (state: State, action: Action) => State,
+    LOCATION_CHANGE: string,
   }
 }

@@ -1,6 +1,7 @@
 // @flow
+import type { TemplateOpts } from './types'
 
-export default function template(opts): string {
+export default function template(opts: TemplateOpts): string {
   return `
 <!doctype html>
 <html ${opts.helmet.htmlAttributes.toString()}>
