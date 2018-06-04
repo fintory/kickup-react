@@ -1,5 +1,10 @@
 import webpack from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
+import CleanWebpackPlugin from 'clean-webpack-plugin'
+import ManifestPlugin from 'webpack-manifest-plugin'
+import OfflinePlugin from 'offline-plugin'
+import path from 'path'
+import config from '../utils/config'
 import baseConfig from './base.config.js'
 
 const { NODE_ENV = 'staging' } = process.env
@@ -9,26 +14,13 @@ module.exports = {
   mode: 'production',
   devtool: 'source-map',
   plugins: [
+    config('serviceWorker.enabled') && new OfflinePlugin(),
+    config('cleanOnBuild') && new CleanWebpackPlugin(baseConfig.output.path, { root: path.join(__dirname, '..', '..') }),
+    new ManifestPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(NODE_ENV),
     }),
-    new HtmlWebpackPlugin({
-      inject: true,
-      template: 'index.html',
-      minify: {
-        removeComments: true,
-        collapseWhitespace: true,
-        removeRedundantAttributes: true,
-        useShortDoctype: true,
-        removeEmptyAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        keepClosingSlash: true,
-        minifyJS: true,
-        minifyCSS: true,
-        minifyURLs: true,
-      },
-    }),
-  ],
+  ].filter(n => !!n),
   performance: {
     hints: false,
   },

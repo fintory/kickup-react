@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { css } from 'aphrodite'
+import { css } from 'aphrodite/no-important'
 
 import { Link } from 'react-router-dom'
 import Button from '../'

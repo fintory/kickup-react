@@ -16,7 +16,7 @@ import NotFound from '../NotFound'
 function Root(): React$Element<'div'> {
   return (
     <div>
-      <Helmet {...helmetDefaults} />
+      <Helmet {...helmetDefaults}>{helmetDefaults.children}</Helmet>
       <Header />
 
       <Switch>

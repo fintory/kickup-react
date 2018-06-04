@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
-import { css } from 'aphrodite'
+import { css } from 'aphrodite/no-important'
 
 import { Button } from 'components'
 

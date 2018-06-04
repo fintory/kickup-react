@@ -1,5 +1,7 @@
+
 import webpack from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
+import path from 'path'
 import baseConfig from './base.config.js'
 
 module.exports = {
@@ -23,7 +25,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      template: 'index.html',
+      template: path.join(__dirname, '..', 'utils', 'devTemplate.js'),
     }),
   ],
 }

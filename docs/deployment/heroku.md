@@ -6,7 +6,7 @@ You can simply create a _staging_ and a _production_ environment on Heroku and t
 
 ## Easy 5-Step Manual Deployment Process
 
-*Step 1:* Create a _Procfile_ with the following line: `web: npm run start:production`.
+*Step 1:* Create a _Procfile_ with the following line: `web: npm run start:server`.
 
 *Step 2:* Install the Node.js buildpack for your Heroku app by running the following command: `heroku buildpacks:set https://github.com/heroku/heroku-buildpack-nodejs -a [your app name]`.
 

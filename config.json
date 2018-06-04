@@ -1,0 +1,19 @@
+{
+  "projectName": "kickup-react",
+  "cleanOnBuild": true,
+  "server": {
+    "defaultHost": "0.0.0.0",
+    "defaultPort": "3000"
+  },
+  "progressive": {
+    "enabled": true,
+    "themeColor": "#000000"
+  },
+  "polyfillIo": {
+    "enabled": true,
+    "features": ["default", "Intl"]
+  },
+  "serviceWorker": {
+    "enabled": true
+  }
+}
