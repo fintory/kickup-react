@@ -1,6 +1,6 @@
 import webpack from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
-import baseConfig from './webpack.config.common.js'
+import baseConfig from './base.config.js'
 
 const { NODE_ENV = 'staging' } = process.env
 

@@ -1,9 +1,10 @@
 import webpack from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
-import baseConfig from './webpack.config.common.js'
+import baseConfig from './base.config.js'
 
 module.exports = {
   ...baseConfig,
+  mode: 'development',
   devtool: 'cheap-module-source-map',
   devServer: {
     historyApiFallback: true,
