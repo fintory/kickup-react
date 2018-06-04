@@ -13,7 +13,7 @@
     "flow-coverage": "flow-coverage-report --strict-coverage",
     "check-circular-dependencies": "madge --circular client/index.js",
     "start": "NODE_ENV=development webpack-dev-server -d --hot --inline --progress --config internals/webpack/development.config.babel.js",
-    "start:production": "NODE_ENV=production node static/server.js",
+    "start:server": "NODE_ENV=production node static/server.js",
     "build": "run-s build:**",
     "build:client": "NODE_ENV=production webpack --progress --colors --config internals/webpack/production.config.babel.js",
     "build:server": "NODE_ENV=production webpack --config internals/webpack/server.config.babel.js",
