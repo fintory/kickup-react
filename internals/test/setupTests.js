@@ -3,7 +3,7 @@ const enzyme = require('enzyme')
 const Adapter = require('enzyme-adapter-react-16')
 const { JSDOM } = require('jsdom')
 
-const { StyleSheetTestUtils } = require('aphrodite/no-important')
+const { StyleSheetTestUtils } = require('aphrodite')
 const { StyleSheetTestUtils: StyleSheetTestUtilsNoImportant } = require('aphrodite/no-important')
 
 StyleSheetTestUtils.suppressStyleInjection()
