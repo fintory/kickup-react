@@ -6,10 +6,17 @@ import { Provider } from 'react-redux'
 import ConnectedRouter from 'pages/Router'
 import { store } from 'modules/store'
 import history from 'modules/history'
+import config from 'app/config'
 
-import './utils/globalStyles.js'
+import 'utils/globalStyles'
 
 console.info('Application running in', process.env.NODE_ENV, 'mode.'); // eslint-disable-line
+
+// Install the offline plugin runtime to initialize the service workers and app
+// cache for the application
+if (process.env.NODE_ENV === 'production' && config('serviceWorker.enabled')) {
+  require('offline-plugin/runtime').install()
+}
 
 /*
  * Render the React Pages into the actual DOM

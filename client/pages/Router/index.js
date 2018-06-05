@@ -2,9 +2,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Router } from 'react-router'
-// $FlowFixMe
 import { LOCATION_CHANGE } from 'react-router-redux/lib/reducer'
 
+import type { Store } from 'redux'
+import type { State, Action } from 'modules/types'
 import type { Props } from './types'
 
 class ConnectedRouter extends Component<Props, void> {
@@ -25,8 +26,11 @@ class ConnectedRouter extends Component<Props, void> {
     if (this.unsubscribeFromHistory) this.unsubscribeFromHistory()
   }
 
-  unsubscribeFromHistory: Function
-  store: Object
+  unsubscribeFromHistory: () => void
+  context: {
+    store: Store<State, Action>,
+  }
+  store: Store<State, Action>
 
   handleLocationChange = (location: Object, action?: Object) => {
     this.store.dispatch({
@@ -39,6 +43,7 @@ class ConnectedRouter extends Component<Props, void> {
   }
 
   render(): React$Node {
+    // $FlowFixMe
     return <Router {...this.props} />
   }
 }

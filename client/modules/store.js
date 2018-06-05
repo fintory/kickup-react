@@ -13,7 +13,7 @@ export const configureStore = (): Store<State, Action> => {
    */
 
   // eslint-disable-next-line no-underscore-dangle
-  const composeEnhancers: Function = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+  const composeEnhancers: Function = global.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
   /*
    * Apply the needed middleware and reducers to the store and create the store

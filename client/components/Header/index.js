@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import { css } from 'aphrodite'
+import { css } from 'aphrodite/no-important'
 
 import styles from './style'
 

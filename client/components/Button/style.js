@@ -1,5 +1,5 @@
 // @flow
-import { StyleSheet } from 'aphrodite'
+import { StyleSheet } from 'aphrodite/no-important'
 import { lighten } from 'polished'
 
 import { colors } from 'constants'

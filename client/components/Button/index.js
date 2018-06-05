@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { css } from 'aphrodite'
+import { css } from 'aphrodite/no-important'
 
 import Spin from 'components/Spin'
 

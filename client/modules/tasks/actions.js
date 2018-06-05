@@ -10,7 +10,7 @@ import type { Action } from './types'
  */
 export function createTask(name: string): Action {
   // Create a unique ID for the task, so you don't need to do this
-  const id = uuid()
+  const id: string = uuid()
 
   return { type: CREATE_TASK, payload: { id, name } }
 }
