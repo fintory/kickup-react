@@ -1,4 +1,4 @@
-import config, { helmetDefaults } from '../config'
+import config from '../config'
 
 describe('config', () => {
   it('returns a string for `projectName`', () => {
@@ -19,17 +19,7 @@ describe('config', () => {
     expect(polyfillIo).toHaveProperty('features')
   })
 
-  it('returns `undefined` when not found', () => {
-    expect(config('a.random.path')).toBe(undefined)
-  })
-})
-
-describe('helmetDefaults', () => {
-  it('has a `title`', () => {
-    expect(helmetDefaults).toHaveProperty('title')
-  })
-
-  it('has a `titleTemplate`', () => {
-    expect(helmetDefaults).toHaveProperty('titleTemplate')
+  it('returns `false` when not found', () => {
+    expect(config('a.random.path')).toBe(false)
   })
 })
