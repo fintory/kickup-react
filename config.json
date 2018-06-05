@@ -11,9 +11,20 @@
   },
   "polyfillIo": {
     "enabled": true,
-    "features": ["default", "Intl"]
+    "features": ["default"]
   },
   "serviceWorker": {
     "enabled": true
+  },
+  "defaultMetaTags": {
+    "enabled": true,
+    "openGraphEnabled": true,
+
+    "title": "kickup-react",
+    "description": "kickup-react is a boilerplate to help you get up and started quickly, by providing everything you need for a seamless front-end development",
+    "keywords": "kickup-react,boilerplate,front-end,development",
+    "robots": "nofollow",
+    "type": "Website",
+    "siteName": "kickup-react"
   }
 }
