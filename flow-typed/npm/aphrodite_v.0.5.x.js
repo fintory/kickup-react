@@ -1,9 +1,9 @@
 // flow-typed signature: c75e97c3ce6b52e0c6996e8cf97ddf07
 // flow-typed version: fb0f81640c/aphrodite_v0.5.x/flow_>=v0.28.x
 
-import { StyleDefinition, StyleSheet } from 'aphrodite'
+import { StyleDefinition, StyleSheet } from 'aphrodite/no-important'
 
-declare module 'aphrodite' {
+declare module 'aphrodite/no-important' {
   declare type DehydratedServerContent = {
     html: string,
     css: {
@@ -50,5 +50,5 @@ declare module 'aphrodite' {
 }
 
 declare module 'aphrodite/no-important' {
-  declare module.exports: $Exports<'aphrodite'>
+  declare module.exports: $Exports<'aphrodite/no-important'>
 }

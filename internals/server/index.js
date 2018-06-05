@@ -1,53 +1,56 @@
 /* eslint-disable consistent-return, import/no-extraneous-dependencies */
 
-require('@babel/register')
+import express from 'express'
+import minimist from 'minimist'
+import compression from 'compression'
 
-const express = require('express')
-const logger = require('./logger')
+import logger from './logger'
+import security from './middlewares/security'
+import reactApp from './middlewares/reactApp'
+import config from '../utils/config'
 
-const argv = require('minimist')(process.argv.slice(2))
-const setup = require('./middlewares/frontendMiddleware')
+const argv = minimist(process.argv.slice(2))
 
 const isDev = process.env.NODE_ENV !== 'production'
-const ngrok = (isDev && process.env.ENABLE_TUNNEL) || argv.tunnel ? require('ngrok') : false
 const { resolve } = require('path')
-
-const app = express()
 
 if (isDev) logger.notice('Loading in development environment\n')
 
+const app = express()
+
+// compression middleware compresses your server responses which makes them
+// smaller (applies also to assets). You can read more about that technique
+// and other good practices on official Express.js docs http://mxs.is/googmy
+app.use(compression())
+app.use('/', express.static(resolve(process.cwd(), 'static')))
+app.disable('x-powered-by')
+
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here
-// app.use('/api', myApi);
+// app.use('/api', myApi)
 
 // In production we need to pass these values in instead of relying on webpack
-setup(app, {
-  outputPath: resolve(process.cwd(), 'build'),
-  publicPath: '/',
-})
+app.use(security)
+
+app.use('*', reactApp)
 
 // get the intended host and port number, use localhost and port 3000 if not provided
-const customHost = argv.host || process.env.HOST
-const host = customHost || null // Let http.Server use its default IPv6/4 host
-const prettyHost = customHost || 'localhost'
-
-const port = argv.port || process.env.PORT || 3000
+const host = argv.host || process.env.HOST || config('server.defaultHost')
+const port = argv.port || process.env.PORT || config('server.defaultPort')
 
 // Start your app.
 app.listen(port, host, err => {
   if (err) {
-    return logger.error(err.message)
+    logger.error(err.message)
   }
 
-  // Connect to ngrok in dev mode
-  if (ngrok) {
-    ngrok.connect(port, (innerErr, url) => {
-      if (innerErr) {
-        return logger.error(innerErr)
-      }
+  logger.notice(`
+    ✓
+    Server for "${config('projectName')}" is ready!
 
-      logger.appStarted(port, prettyHost, url)
-    })
-  } else {
-    logger.appStarted(port, prettyHost)
-  }
+    Service Workers: ${config('serviceWorker.enabled')}
+    Polyfills: ${config('polyfillIo.enabled')} (${config('polyfillIo.features').join(', ')})
+    Server is now listening on Port ${port}
+    You can access it in the browser at http://${host}:${port}
+    Press Ctrl-C to stop.
+  `)
 })

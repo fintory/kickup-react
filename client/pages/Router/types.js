@@ -1,7 +1,11 @@
 // @flow
+import type { Store } from 'redux'
+import type { State, Action } from 'modules/types'
+import type { BrowserHistory } from 'history/createBrowserHistory'
+
 export type Props = {
-  store?: Object,
-  history: Object,
+  store?: Store<State, Action>,
+  history: BrowserHistory,
   children: React$Node,
   isSSR?: boolean,
 }
