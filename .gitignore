@@ -5,3 +5,4 @@ static
 *.log*
 .tmp
 coverage
+flow-coverage

@@ -50,9 +50,10 @@ jobs:
       - restore_cache: *restore-node-cache
       - run: *install-node-dependencies
       - save_cache: *save-node-cache
-
-      - run: yarn flow
       - run: yarn flow-coverage
+      - store_artifacts:
+          path: ./flow-coverage
+          destination: flow-coverage
 
 workflows:
   version: 2
