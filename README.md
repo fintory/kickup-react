@@ -1,4 +1,4 @@
-[![kickup-react](https://s3.eu-central-1.amazonaws.com/github-banner/kickup-react.jpg)](#)
+[![kickup-react](https://s3.eu-central-1.amazonaws.com/github-banner/kickup-react.jpg)](#) [![Greenkeeper badge](https://badges.greenkeeper.io/kreativgebiet/kickup-react.svg)](https://greenkeeper.io/)
 
 <p align="center">
 <a href='https://coveralls.io/github/kreativgebiet/kickup-react?branch=master'><img src='https://coveralls.io/repos/github/kreativgebiet/kickup-react/badge.svg?branch=master' alt='Coverage Status' /></a>
