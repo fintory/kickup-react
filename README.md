@@ -1,6 +1,7 @@
-[![kickup-react](https://s3.eu-central-1.amazonaws.com/github-banner/kickup-react.jpg)](#) [![Greenkeeper badge](https://badges.greenkeeper.io/kreativgebiet/kickup-react.svg)](https://greenkeeper.io/)
+[![kickup-react](https://s3.eu-central-1.amazonaws.com/github-banner/kickup-react.jpg)](#)
 
 <p align="center">
+<a href='https://greenkeeper.io/'><img src='https://badges.greenkeeper.io/kreativgebiet/kickup-react.svg' alt='Greenkeeper: Enabled' /></a>
 <a href='https://coveralls.io/github/kreativgebiet/kickup-react?branch=master'><img src='https://coveralls.io/repos/github/kreativgebiet/kickup-react/badge.svg?branch=master' alt='Coverage Status' /></a>
 <a href="https://circleci.com/gh/kreativgebiet/kickup-react"><img src="https://img.shields.io/circleci/project/github/kreativgebiet/kickup-react.svg" /></a>
 <a href="https://github.com/kreativgebiet/kickup-react/releases"><img src="https://img.shields.io/github/release/kreativgebiet/kickup-react.svg" /></a>
