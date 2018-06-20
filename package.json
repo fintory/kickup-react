@@ -33,6 +33,7 @@
     "@babel/preset-stage-0": "7.0.0-beta.51",
     "@babel/register": "7.0.0-beta.51",
     "@babel/runtime": "7.0.0-beta.51",
+    "@fintory/flow-coverage-report": "^0.6.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^23.0.1",
@@ -55,7 +56,6 @@
     "eslint-plugin-react": "^7.4.0",
     "file-loader": "^1.1.11",
     "flow-bin": "^0.74.0",
-    "flow-coverage-report": "^0.5.0",
     "html-webpack-plugin": "^3.2.0",
     "img-loader": "^3.0.0",
     "ip": "^1.1.5",
@@ -87,8 +87,8 @@
     "history": "^4.6.1",
     "invariant": "^2.2.2",
     "normalizr": "^3.2.2",
-    "polished": "^1.9.2",
     "offline-plugin": "^5.0.5",
+    "polished": "^1.9.2",
     "prop-types": "^15.6.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -144,15 +144,16 @@
     ]
   },
   "flow-coverage-report": {
-    "includeGlob": [
+    "globIncludePatterns": [
       "client/**/*.js"
     ],
-    "excludeGlob": [
+    "globExcludePatterns": [
       "node_modules/",
       "client/**/*.test.js"
     ],
-    "type": [
-      "text"
+    "reportTypes": [
+      "text",
+      "html"
     ],
     "threshold": 96
   }
