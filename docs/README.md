@@ -8,6 +8,8 @@
   - [Code Review](general/code-review.md)
 - [Deployment](deployment) *(currently Heroku only)*
   - [Heroku](deployment/heroku.md)
+- [Layout](layout)
+  - [Used frameworks](layout/general.md)
 - [Testing](testing)
   - [Unit Testing](testing/unit-testing.md)
   - [Component Testing](testing/component-testing.md)
