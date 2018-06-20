@@ -35,6 +35,7 @@ const styles = extended.StyleSheet.create({
       color: 'inherit',
       appearance: 'none',
       fontSmoothing: 'antialiased',
+      '-webkit-font-smoothing': 'antialiased',
     },
     '*body': {
       fontSize: 24,
@@ -45,6 +46,7 @@ const styles = extended.StyleSheet.create({
       color: '#222',
       margin: '0 auto',
       fontSmoothing: 'antialiased',
+      '-webkit-font-smoothing': 'antialiased',
       fontWeight: 300,
       height: '100vh',
       boxSizing: 'border-box',
