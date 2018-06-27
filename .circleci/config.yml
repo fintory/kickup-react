@@ -29,6 +29,7 @@ defaults: &defaults
 
 jobs:
   update-lockfile:
+    <<: *defaults
     steps:
       - checkout
       - run: 'sudo yarn global add greenkeeper-lockfile@2'
