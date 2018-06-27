@@ -10,7 +10,7 @@ import type { Props } from './types.js'
 
 export default function Button(allProps: Props): React$Node {
   let Tag = 'button'
-  const { loading, ...props } = allProps
+  const { loading, children, ...props } = allProps
 
   if (Object.prototype.hasOwnProperty.call(props, 'to')) {
     Tag = Link
@@ -37,7 +37,7 @@ export default function Button(allProps: Props): React$Node {
 
       {/* Implement the children (content) of the button */}
       <span className={css(styles.button__content, !!loading && styles['button__spinner--active'])}>
-        {props.children}
+        {children}
       </span>
     </Tag>
   )

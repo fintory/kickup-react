@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 import { css } from 'aphrodite/no-important'
 
 import { Link } from 'react-router-dom'
-import Button from '../'
+import Button from '..'
 import styles from '../style'
 
 describe('<Button />', () => {
