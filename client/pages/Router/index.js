@@ -10,12 +10,15 @@ import type { Props } from './types'
 
 class ConnectedRouter extends Component<Props, void> {
   static contextTypes = {
+    // eslint-disable-next-line react/forbid-prop-types
     store: PropTypes.object,
   }
 
   componentWillMount() {
     const { store: propsStore, history, isSSR } = this.props
-    this.store = propsStore || this.context.store
+    const { store } = this.context
+
+    this.store = propsStore || store
 
     if (!isSSR) this.unsubscribeFromHistory = history.listen(this.handleLocationChange)
 
@@ -26,12 +29,6 @@ class ConnectedRouter extends Component<Props, void> {
     if (this.unsubscribeFromHistory) this.unsubscribeFromHistory()
   }
 
-  unsubscribeFromHistory: () => void
-  context: {
-    store: Store<State, Action>,
-  }
-  store: Store<State, Action>
-
   handleLocationChange = (location: Object, action?: Object) => {
     this.store.dispatch({
       type: LOCATION_CHANGE,
@@ -41,6 +38,14 @@ class ConnectedRouter extends Component<Props, void> {
       },
     })
   }
+
+  unsubscribeFromHistory: () => void
+
+  context: {
+    store: Store<State, Action>,
+  }
+
+  store: Store<State, Action>
 
   render(): React$Node {
     // $FlowFixMe

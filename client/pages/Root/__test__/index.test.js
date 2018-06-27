@@ -4,7 +4,7 @@ import { shallow, mount } from 'enzyme'
 import MemoryRouter from 'react-router-dom/MemoryRouter'
 
 import { Home, About, NotFound } from 'pages'
-import Root from '../'
+import Root from '..'
 
 describe('<Root />', () => {
   it('should render properly', () => {

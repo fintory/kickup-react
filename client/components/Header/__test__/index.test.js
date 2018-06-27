@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Header from '../'
+import Header from '..'
 
 describe('<Header />', () => {
   it('should have an logo in a `div`', () => {
