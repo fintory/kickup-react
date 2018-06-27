@@ -25,7 +25,7 @@ Since we always want to used bleeding-edge, we needed to have the ability to qui
 | :paintbrush: aphrodite | Excellent CSS-in-JS framework |
 | :sparkles: Flow | Type checker for ES6 and javascript |
 | :bug: eslint | Linting the Javascript-code |
-| :bomb: immutable.js | Make things immutable (and comparable) |
+| :bug: Jest | Unit-testing the code |
 | :boom: CircleCI | Automate deployments and integration tasks |
 
 ## How to set it up?
