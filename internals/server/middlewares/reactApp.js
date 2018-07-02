@@ -21,7 +21,7 @@ module.exports = (req, res): * => {
 
     return renderToString(
       <Provider store={store}>
-        <StaticRouter location={req.url} context={{}}>
+        <StaticRouter location={req.originalUrl} context={{}}>
           <App />
         </StaticRouter>
       </Provider>
