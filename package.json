@@ -21,7 +21,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "7.0.0-beta.51",
+    "@babel/cli": "7.0.0-beta.52",
     "@babel/core": "^7.0.0-beta.49",
     "@babel/plugin-proposal-class-properties": "^7.0.0-beta.49",
     "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.51",
