@@ -970,9 +970,9 @@
     "@babel/plugin-syntax-dynamic-import" "7.0.0-beta.51"
     "@babel/plugin-syntax-import-meta" "7.0.0-beta.51"
 
-"@babel/register@7.0.0-beta.51":
-  version "7.0.0-beta.51"
-  resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.0.0-beta.51.tgz#31a6d27f124cc7a2a0a603b65d23d5644b979aa0"
+"@babel/register@7.0.0-beta.52":
+  version "7.0.0-beta.52"
+  resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.0.0-beta.52.tgz#011f925e087919ac3a75a3e8b8606d1d224046e5"
   dependencies:
     core-js "^2.5.7"
     find-cache-dir "^1.0.0"
