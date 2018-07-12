@@ -16,6 +16,10 @@ module.exports = {
   plugins: [
     config('serviceWorker.enabled') && new OfflinePlugin(),
     config('cleanOnBuild') && new CleanWebpackPlugin(baseConfig.output.path, { root: path.join(__dirname, '..', '..') }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: path.join(__dirname, '..', 'utils', 'devTemplate.js'),
+    }),
     new ManifestPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(NODE_ENV),
