@@ -12,7 +12,7 @@ export default function NotFound(): React$Node {
     <div className={css(styles.main)}>
       <Helmet title="About" />
 
-      <p>Not Found</p>
+      <h2>Not Found</h2>
       <Button to="/">Go back home</Button>
     </div>
   )

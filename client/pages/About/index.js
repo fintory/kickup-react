@@ -15,7 +15,7 @@ export default function About(): React$Node {
         <meta name="description" content="Helmet application 2" />
       </Helmet>
 
-      <p>About</p>
+      <h2>About</h2>
       <Button to="/">Go back home</Button>
     </div>
   )

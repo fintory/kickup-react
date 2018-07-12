@@ -20,7 +20,7 @@ export default class Home extends Component<Props, State> {
       <div className={css(styles.main)}>
         <Helmet title="Home" />
 
-        <p>Home</p>
+        <h2>Home</h2>
         <Button loading={this.state.loading} to="/about">
           {'Go to `/about`'}
         </Button>
