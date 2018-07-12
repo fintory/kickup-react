@@ -1,6 +1,6 @@
 // @flow
 import thunk from 'redux-thunk'
-import routerMiddleware from 'react-router-redux/lib/middleware'
+import routerMiddleware from 'connected-react-router/lib/middleware'
 import type { Middleware } from 'redux'
 
 import history from './history'
