@@ -1,6 +1,6 @@
 // @flow
 import { createStore, applyMiddleware, compose } from 'redux'
-import type { Store } from 'redux'
+import type { Store, StoreEnhancer, Reducer } from 'redux'
 import { connectRouter } from 'connected-react-router'
 
 import middleware from './middleware'
@@ -14,15 +14,17 @@ export const configureStore = (): Store<State, Action> => {
    * otherwise the `compose` function from `redux` is used.
    */
 
-  // eslint-disable-next-line no-underscore-dangle
-  const composeEnhancers: Function = global.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-  const baseReducer = connectRouter(history)(rootReducer)
+  const baseReducer: Reducer<State, Action> = connectRouter(history)(rootReducer)
+  const composeEnhancers: StoreEnhancer<State, Action, *> =
+    // eslint-disable-next-line no-underscore-dangle
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
   /*
    * Apply the needed middleware and reducers to the store and create the store
    * for later export
    */
 
+  // $FlowFixMe
   return createStore(baseReducer, composeEnhancers(applyMiddleware(...middleware)))
 }
 

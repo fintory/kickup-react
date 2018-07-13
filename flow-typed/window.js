@@ -2,7 +2,7 @@ declare interface Window extends EventTarget, IDBEnvironment {
   getsafe: Object;
   coupon: string;
   analytics: Object;
-  __REDUX_DEVTOOLS_EXTENSION_COMPOSE__: Function;
+  __REDUX_DEVTOOLS_EXTENSION_COMPOSE__: any;
 
   +caches: CacheStorage;
   +clientInformation: Navigator;
