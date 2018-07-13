@@ -1,5 +1,5 @@
 // @flow
-import uuid from 'uuid/v1'
+import uuid from 'utils/uuid'
 import { CREATE_TASK, REMOVE_TASK } from './actionTypes'
 import type { Action } from './types'
 
