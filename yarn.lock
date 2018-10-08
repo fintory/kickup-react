@@ -3947,9 +3947,9 @@ flow-annotation-check@1.8.0:
     glob "7.1.1"
     load-pkg "^3.0.1"
 
-flow-bin@^0.76.0:
-  version "0.76.0"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.76.0.tgz#eb00036991c3abc106743fcbc7ee321f02aa4faa"
+flow-bin@^0.77.0:
+  version "0.77.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.77.0.tgz#4e5c93929f289a0c28e08fb361a9734944a11297"
 
 flush-write-stream@^1.0.0:
   version "1.0.3"
@@ -6645,9 +6645,9 @@ ora@1.4.0:
     cli-spinners "^1.0.1"
     log-symbols "^2.1.0"
 
-ora@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/ora/-/ora-2.1.0.tgz#6caf2830eb924941861ec53a173799e008b51e5b"
+ora@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ora/-/ora-3.0.0.tgz#8179e3525b9aafd99242d63cc206fd64732741d0"
   dependencies:
     chalk "^2.3.1"
     cli-cursor "^2.1.0"
@@ -9204,9 +9204,9 @@ webpack-dev-server@^3.1.4:
     webpack-log "^1.1.2"
     yargs "11.0.0"
 
-webpack-hot-middleware@^2.22.2:
-  version "2.22.2"
-  resolved "https://registry.yarnpkg.com/webpack-hot-middleware/-/webpack-hot-middleware-2.22.2.tgz#623b77ce591fcd4e1fb99f18167781443e50afac"
+webpack-hot-middleware@^2.24.3:
+  version "2.24.3"
+  resolved "https://registry.yarnpkg.com/webpack-hot-middleware/-/webpack-hot-middleware-2.24.3.tgz#5bb76259a8fc0d97463ab517640ba91d3382d4a6"
   dependencies:
     ansi-html "0.0.7"
     html-entities "^1.2.0"
