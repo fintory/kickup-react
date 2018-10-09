@@ -28,17 +28,6 @@ defaults: &defaults
     - image: circleci/node:8
 
 jobs:
-  update-lockfile:
-    <<: *defaults
-    steps:
-      - checkout
-      - run: 'sudo yarn global add greenkeeper-lockfile@2'
-      - run: 'greenkeeper-lockfile-update'
-      - run:
-          name: SSH Avoid hosts unknown
-          command: 'mkdir -p ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config'
-      - run: 'greenkeeper-lockfile-upload'
-
   test-smoke:
     <<: *defaults
     steps:
@@ -71,6 +60,5 @@ workflows:
 
   build:
     jobs:
-      - update-lockfile
       - test-smoke
       - test-flow
