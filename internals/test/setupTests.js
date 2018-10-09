@@ -22,6 +22,9 @@ global.window = dom.window
 
 Object.keys(dom.window).forEach(property => {
   if (typeof global[property] === 'undefined') {
+    if (property === 'localStorage') return
+    if (property === 'sessionStorage') return
+
     exposedProperties.push(property)
     global[property] = dom.window[property]
   }
