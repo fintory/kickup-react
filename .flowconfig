@@ -2,7 +2,7 @@
 .*/test/.*
 .*/internals/server/.*
 .*/node_modules/graphviz/documentation.json
-.*/node_modules/eslint-plugin-jsx-a11y/src/.*
+.*/node_modules/eslint-plugin-jsx-a11y/.*
 .*/node_modules/polished/.*
 .*/**/*.test.js
 
