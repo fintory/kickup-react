@@ -51,7 +51,7 @@
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-prettier": "^3.0.0",
     "eslint-import-resolver-babel-module": "5.0.0-beta.0",
-    "eslint-plugin-flowtype": "^2.50.3",
+    "eslint-plugin-flowtype": "^3.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^3.0.0",
