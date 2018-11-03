@@ -82,7 +82,7 @@
   "dependencies": {
     "aphrodite": "^2.2.0",
     "classnames": "^2.2.3",
-    "connected-react-router": "^4.3.0",
+    "connected-react-router": "^5.0.0",
     "coveralls": "^3.0.1",
     "express": "^4.15.3",
     "helmet": "^3.12.1",
