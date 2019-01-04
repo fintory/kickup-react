@@ -4,10 +4,10 @@
 
 We are striving to have a clean and well-maintainable code base, hence we are using constants for many things like colors, sizes, etc.. Please continue to use constants, since they are an easy starting point, when changing something in the layout.
 
-## [aphrodite](https://github.com/Khan/aphrodite)
+## [styled-components](https://github.com/Khan/styled-components)
 
 Be sure to swap styles to an external file for each component. This will increase the readability of your files.
-For more details visit about aphrodite the [documentation](https://github.com/Khan/aphrodite/blob/master/README.md).
+For more details visit about styled-components the [documentation](https://www.styled-components.com/docs).
 
 ## [polished](https://polished.js.org/docs/)
 
