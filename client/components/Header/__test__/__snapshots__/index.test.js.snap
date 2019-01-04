@@ -2,8 +2,8 @@
 
 exports[`<Header /> should have an logo in a \`div\` 1`] = `
 .c0 {
-  margintop: 53px;
-  marginbottom: 50px;
+  margin-top: 53px;
+  margin-bottom: 50px;
 }
 
 .c1 {
@@ -27,8 +27,8 @@ exports[`<Header /> should have an logo in a \`div\` 1`] = `
             "lastClassName": "c0",
             "rules": Array [
               "
-  margintop: 53px;
-  marginbottom: 50px;
+  margin-top: 53px;
+  margin-bottom: 50px;
 ",
             ],
           },

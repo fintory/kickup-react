@@ -73,5 +73,5 @@ declare module 'redux' {
     reducers: O
   ): CombinedReducer<$ObjMap<O, <S>(r: Reducer<S, any>) => S>, A>
 
-  declare export var compose: *
+  declare export var compose: (...functions: Array<Function>) => Function
 }

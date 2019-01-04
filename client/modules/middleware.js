@@ -5,6 +5,6 @@ import type { Middleware } from 'redux'
 
 import history from './history'
 
-const router: Middleware<*, *> = routerMiddleware(history)
+const router: Middleware<{}, *> = routerMiddleware(history)
 
 export default [thunk, router]

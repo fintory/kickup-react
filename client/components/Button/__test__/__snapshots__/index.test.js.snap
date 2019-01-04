@@ -189,17 +189,17 @@ exports[`<Button /> renders as \`Link\` with \`to\` prop 1`] = `
   border: 0;
   width: ",
                   [Function],
-                  "
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+                  ";
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transition: opacity 100ms linear;
 
   ",
                   [Function],
-                  "
+                  ";
 
   ",
                   [Function],
-                  "
+                  ";
 
   :not([disabled]):hover {
     color: ",
@@ -210,9 +210,7 @@ exports[`<Button /> renders as \`Link\` with \`to\` prop 1`] = `
 
   ",
                   [Function],
-                  "
-
-  ",
+                  " ",
                   "
     @media (min-width: ",
                   [Function],
@@ -224,7 +222,7 @@ exports[`<Button /> renders as \`Link\` with \`to\` prop 1`] = `
                   "
     }
   ",
-                  "
+                  ";
 ",
                 ],
               },
@@ -699,17 +697,17 @@ exports[`<Button /> renders as \`a\` with \`href\` prop 1`] = `
   border: 0;
   width: ",
               [Function],
-              "
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+              ";
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transition: opacity 100ms linear;
 
   ",
               [Function],
-              "
+              ";
 
   ",
               [Function],
-              "
+              ";
 
   :not([disabled]):hover {
     color: ",
@@ -720,9 +718,7 @@ exports[`<Button /> renders as \`a\` with \`href\` prop 1`] = `
 
   ",
               [Function],
-              "
-
-  ",
+              " ",
               "
     @media (min-width: ",
               [Function],
@@ -734,7 +730,7 @@ exports[`<Button /> renders as \`a\` with \`href\` prop 1`] = `
               "
     }
   ",
-              "
+              ";
 ",
             ],
           },
@@ -1197,17 +1193,17 @@ exports[`<Button /> renders as \`button\` with \`onClick\` prop 1`] = `
   border: 0;
   width: ",
               [Function],
-              "
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+              ";
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transition: opacity 100ms linear;
 
   ",
               [Function],
-              "
+              ";
 
   ",
               [Function],
-              "
+              ";
 
   :not([disabled]):hover {
     color: ",
@@ -1218,9 +1214,7 @@ exports[`<Button /> renders as \`button\` with \`onClick\` prop 1`] = `
 
   ",
               [Function],
-              "
-
-  ",
+              " ",
               "
     @media (min-width: ",
               [Function],
@@ -1232,7 +1226,7 @@ exports[`<Button /> renders as \`button\` with \`onClick\` prop 1`] = `
               "
     }
   ",
-              "
+              ";
 ",
             ],
           },
@@ -1693,17 +1687,17 @@ exports[`<Button /> renders as \`button\` without props 1`] = `
   border: 0;
   width: ",
               [Function],
-              "
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+              ";
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transition: opacity 100ms linear;
 
   ",
               [Function],
-              "
+              ";
 
   ",
               [Function],
-              "
+              ";
 
   :not([disabled]):hover {
     color: ",
@@ -1714,9 +1708,7 @@ exports[`<Button /> renders as \`button\` without props 1`] = `
 
   ",
               [Function],
-              "
-
-  ",
+              " ",
               "
     @media (min-width: ",
               [Function],
@@ -1728,7 +1720,7 @@ exports[`<Button /> renders as \`button\` without props 1`] = `
               "
     }
   ",
-              "
+              ";
 ",
             ],
           },
