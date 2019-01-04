@@ -2,6 +2,8 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
+import type { Props } from './types'
+
 const rotate360 = keyframes`
   from {
     transform: rotate(0deg);

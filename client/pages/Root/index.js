@@ -13,7 +13,7 @@ import Home from '../Home'
 import About from '../About'
 import NotFound from '../NotFound'
 
-function Root(): React$Element<'div'> {
+function Root(): React$Element<*> {
   return (
     <Fragment>
       <GlobalStyleTag />
