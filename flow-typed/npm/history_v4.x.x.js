@@ -25,8 +25,8 @@ declare module 'history/createBrowserHistory' {
     goBack: () => void,
     goForward: () => void,
     listen: Function,
-    block: (message: string) => Unblock,
-    block: ((location: BrowserLocation, action: Action) => string) => Unblock,
+    block: (message: string) => typeof Unblock,
+    block: ((location: BrowserLocation, action: Action) => string) => typeof Unblock,
     push: (path: string) => void,
   }
 
@@ -67,8 +67,8 @@ declare module 'history/createMemoryHistory' {
     // Memory only
     canGo: (n: number) => boolean,
     listen: Function,
-    block: (message: string) => Unblock,
-    block: ((location: MemoryLocation, action: Action) => string) => Unblock,
+    block: (message: string) => typeof Unblock,
+    block: ((location: MemoryLocation, action: Action) => string) => typeof Unblock,
     push: (path: string) => void,
   }
 
@@ -103,8 +103,8 @@ declare module 'history/createHashHistory' {
     goBack: () => void,
     goForward: () => void,
     listen: Function,
-    block: (message: string) => Unblock,
-    block: ((location: HashLocation, action: Action) => string) => Unblock,
+    block: (message: string) => typeof Unblock,
+    block: ((location: HashLocation, action: Action) => string) => typeof Unblock,
     push: (path: string) => void,
   }
 

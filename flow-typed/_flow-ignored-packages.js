@@ -1,3 +1,3 @@
-// declare module 'polished' {
-//   declare module.exports: any
-// }
+declare module 'polished' {
+  declare module.exports: any
+}
