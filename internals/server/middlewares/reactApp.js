@@ -2,6 +2,7 @@
 /* eslint-disable global-require, import/no-extraneous-dependencies */
 import React from 'react'
 import Helmet from 'react-helmet'
+import { minify } from 'html-minifier'
 
 import { StaticRouter } from 'react-router-dom'
 import { ServerStyleSheet, StyleSheetManager } from 'styled-components'
@@ -43,8 +44,11 @@ module.exports = (req, res): * => {
     html,
     head: `
       ${sheet.getStyleTags()}
-      ${config('progressive.enabled') &&
-        `<meta name="theme-color" content="${config('progressive.themeColor')}" />`}
+      ${
+        config('progressive.enabled')
+          ? `<meta name="theme-color" content="${config('progressive.themeColor')}" />`
+          : ''
+      }
 
       ${helmet.title.toString()}
       ${helmet.meta.toString()}
@@ -61,5 +65,10 @@ module.exports = (req, res): * => {
   })
 
   res.set({ 'Cache-Control': 'no-cache' })
-  res.send(document)
+  res.send(
+    minify(document, {
+      removeAttributeQuotes: true,
+      collapseWhitespace: true,
+    })
+  )
 }
