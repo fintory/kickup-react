@@ -6,7 +6,7 @@
     "defaultPort": "3000"
   },
   "progressive": {
-    "enabled": true,
+    "enabled": false,
     "themeColor": "#000000"
   },
   "polyfillIo": {
@@ -14,7 +14,7 @@
     "features": ["default"]
   },
   "serviceWorker": {
-    "enabled": true
+    "enabled": false
   },
   "defaultMetaTags": {
     "enabled": true,
