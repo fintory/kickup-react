@@ -45,12 +45,14 @@ export const Button = styled.button`
     props.small &&
     css`
       padding: 8px 12px;
-    `} ${(props: { margin: number }) =>
+    `};
+
+  ${(props: { margin: number }) =>
     props.margin &&
     css`
       margin-left: ${props.margin}px;
       margin-right: ${props.margin}px;
-    `}
+    `};
 
   :not([disabled]):hover {
     color: ${(props: { variant: string }) => fontColors[props.variant]};
