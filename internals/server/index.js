@@ -22,7 +22,7 @@ const app = express()
 // smaller (applies also to assets). You can read more about that technique
 // and other good practices on official Express.js docs http://mxs.is/googmy
 app.use(compression())
-app.use('/', express.static(resolve(process.cwd(), 'static')))
+app.use('/', express.static(resolve(process.cwd(), 'static'), { index: false }))
 app.disable('x-powered-by')
 
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here
