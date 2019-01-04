@@ -14,7 +14,7 @@ export default createGlobalStyle`
     padding: 0;
     border: 0;
     background: none;
-    font-size: 100%:
+    font-size: 100%;
     vertical-align: baseline;
     font-family: inherit;
     font-weight: inherit;

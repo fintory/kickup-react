@@ -2,8 +2,8 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.header`
-  margintop: 53px;
-  marginbottom: 50px;
+  margin-top: 53px;
+  margin-bottom: 50px;
 `
 
 export const Logo = styled.div`

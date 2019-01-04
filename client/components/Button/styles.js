@@ -37,17 +37,15 @@ export const Button = styled.button`
   outline: none;
   appearance: none;
   border: 0;
-  width: ${(props: { block: boolean }) => (props.block ? '100%' : 'auto')}
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  width: ${(props: { block: boolean }) => (props.block ? '100%' : 'auto')};
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transition: opacity 100ms linear;
 
   ${(props: { small?: boolean }) =>
     props.small &&
     css`
       padding: 8px 12px;
-    `}
-
-  ${(props: { margin: number }) =>
+    `} ${(props: { margin: number }) =>
     props.margin &&
     css`
       margin-left: ${props.margin}px;
@@ -67,11 +65,9 @@ export const Button = styled.button`
 
       background-color: ${colors.shadeBeta};
       color: ${rgba(colors.white, 0.95)};
-    `}
-
-  ${media.lg`
+    `} ${media.lg`
     font-size: 14px;
-  `}
+  `};
 `
 
 export const Spinner = styled.span`
