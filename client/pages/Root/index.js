@@ -1,21 +1,22 @@
 // @flow
-import React from 'react'
+import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { hot } from 'react-hot-loader'
 import Route from 'react-router-dom/Route'
 import Switch from 'react-router-dom/Switch'
 
-import { Header } from 'components'
-
+import Header from 'components/Header'
 import config from 'app/config'
 
+import GlobalStyleTag from './styles'
 import Home from '../Home'
 import About from '../About'
 import NotFound from '../NotFound'
 
 function Root(): React$Element<'div'> {
   return (
-    <div>
+    <Fragment>
+      <GlobalStyleTag />
       <Helmet
         defaultTitle={config('projectName').toString()}
         titleTemplate={`${config('projectName').toString()} — %s`}
@@ -54,7 +55,7 @@ function Root(): React$Element<'div'> {
         <Route path="/about" component={About} />
         <Route component={NotFound} />
       </Switch>
-    </div>
+    </Fragment>
   )
 }
 

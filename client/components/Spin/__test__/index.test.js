@@ -1,16 +1,16 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { render } from 'enzyme'
 
 import Spin from '..'
 
 describe('<Spin />', () => {
   it('renders a `div` component', () => {
-    const wrapper = shallow(<Spin />)
-    expect(wrapper.find('div')).toHaveLength(1)
+    const wrapper = render(<Spin />)
+    expect(wrapper.is('div')).toBe(true)
   })
 
   it('has two `span` component', () => {
-    const wrapper = shallow(<Spin />)
+    const wrapper = render(<Spin />)
     expect(wrapper.find('span')).toHaveLength(2)
   })
 })

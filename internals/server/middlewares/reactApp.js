@@ -4,7 +4,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import { StaticRouter } from 'react-router-dom'
-import { StyleSheetServer } from 'aphrodite/no-important'
+import { ServerStyleSheet, StyleSheetManager } from 'styled-components'
 import { renderToString } from 'react-dom/server'
 import { Provider } from 'react-redux'
 import App from '../../../client/pages/Root'
@@ -16,25 +16,33 @@ const manifest = require('../../../static/manifest.json')
 
 // Production middlewares
 module.exports = (req, res): * => {
-  const { html, css } = StyleSheetServer.renderStatic((): string => {
-    require('../../../client/utils/globalStyles')
-
-    return renderToString(
-      <Provider store={store}>
-        <StaticRouter location={req.originalUrl} context={{}}>
-          <App />
-        </StaticRouter>
-      </Provider>
-    )
-  })
-
+  // eslint-disable-next-line
+  let context = {}
+  let html
+  const sheet = new ServerStyleSheet()
   const helmet = Helmet.renderStatic()
+
+  try {
+    html = renderToString(
+      <StyleSheetManager sheet={sheet.instance}>
+        <Provider store={store}>
+          <StaticRouter location={req.originalUrl} context={context}>
+            <App />
+          </StaticRouter>
+        </Provider>
+      </StyleSheetManager>
+    )
+
+    if (context.url) res.redirect(302, context.url)
+  } catch (error) {
+    res.sendStatus(500)
+  }
 
   const document = build({
     helmet,
     html,
     head: `
-      <style data-aphrodite>${css.content}</style>
+      ${sheet.getStyleTags()}
       ${config('progressive.enabled') &&
         `<meta name="theme-color" content="${config('progressive.themeColor')}" />`}
 
@@ -52,5 +60,6 @@ module.exports = (req, res): * => {
     `,
   })
 
+  res.set({ 'Cache-Control': 'no-cache' })
   res.send(document)
 }

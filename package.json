@@ -103,6 +103,8 @@
     "redux": "^4.0.0",
     "redux-thunk": "^2.1.0",
     "reselect": "^3.0.1",
+    "styled-bootstrap-grid": "^2.0.1",
+    "styled-components": "^4.1.3",
     "uuid": "^3.2.1"
   },
   "jest": {
@@ -116,14 +118,13 @@
       "client/**/*.js",
       "!client/**/style.js",
       "!client/**/types.js",
-      "!client/**/style.js",
+      "!client/**/styles.js",
       "!client/index.js",
       "!client/modules/**/index.js",
       "!client/components/index.js",
       "!client/pages/index.js",
       "!client/pages/Router/*.js",
-      "!client/App.js",
-      "!client/utils/globalStyles.js"
+      "!client/App.js"
     ],
     "coverageThreshold": {
       "global": {

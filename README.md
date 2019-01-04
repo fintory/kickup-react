@@ -16,23 +16,23 @@ Since we always want to used bleeding-edge, we needed to have the ability to qui
 
 ## What's in there?
 
-| Module Name | What is it for? |
-| --- | --- |
-| :atom: React | Well, I think you know what this is for |
-| :zap: Redux | State management in React. Done right. |
-| :nut_and_bolt: Webpack | Compilation of React and all other modules |
-| :syringe: Babel | Using ES6 things in ES5 browsers right now |
-| :paintbrush: aphrodite | Excellent CSS-in-JS framework |
-| :sparkles: Flow | Type checker for ES6 and javascript |
-| :bug: eslint | Linting the Javascript-code |
-| :bug: Jest | Unit-testing the code |
-| :boom: CircleCI | Automate deployments and integration tasks |
+| Module Name                    | What is it for?                            |
+| ------------------------------ | ------------------------------------------ |
+| :atom: React                   | Well, I think you know what this is for    |
+| :zap: Redux                    | State management in React. Done right.     |
+| :nut_and_bolt: Webpack         | Compilation of React and all other modules |
+| :syringe: Babel                | Using ES6 things in ES5 browsers right now |
+| :paintbrush: styled-components | Excellent CSS-in-JS framework              |
+| :sparkles: Flow                | Type checker for ES6 and javascript        |
+| :bug: eslint                   | Linting the Javascript-code                |
+| :bug: Jest                     | Unit-testing the code                      |
+| :boom: CircleCI                | Automate deployments and integration tasks |
 
 ## How to set it up?
 
 If you also want to use the `kickup-react` boilerplate, you can simply `git clone` the repository or download the zip file into your project folder and unzip it. If you are aiming to use this boilerplate, I assume that you are already familiar how to clone it into your `development` folder.
 
-*Note:* Be sure to change the README, package.json, etc. since there are some information about Kreativgebiet and the creators of this boilerplate.
+_Note:_ Be sure to change the README, package.json, etc. since there are some information about Kreativgebiet and the creators of this boilerplate.
 
 ### Development Setup
 
@@ -42,7 +42,7 @@ Basically all you need to do is run the following command into the freshly clone
 npm start
 ```
 
-*Note:* Or if you prefer `yarn` instead of `npm`, just use `yarn start`.
+_Note:_ Or if you prefer `yarn` instead of `npm`, just use `yarn start`.
 
 ### Production Setup
 

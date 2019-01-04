@@ -1,11 +1,9 @@
 // @flow
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
-import { css } from 'aphrodite/no-important'
+import Button from 'components/Button'
 
-import { Button } from 'components'
-
-import styles from './style'
+import { Wrapper } from './styles'
 import type { Props, State } from './types'
 
 export default class Home extends Component<Props, State> {
@@ -21,7 +19,7 @@ export default class Home extends Component<Props, State> {
     const { loading } = this.state
 
     return (
-      <div className={css(styles.main)}>
+      <Wrapper>
         <Helmet title="Home" />
 
         <h2>Home</h2>
@@ -34,7 +32,7 @@ export default class Home extends Component<Props, State> {
           {/* eslint-disable-next-line jsx-a11y/label-has-for */}
           <label htmlFor="loading">Change button to `loading`</label>
         </div>
-      </div>
+      </Wrapper>
     )
   }
 }

@@ -1,16 +1,14 @@
 // @flow
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { css } from 'aphrodite/no-important'
-
 import Spin from 'components/Spin'
 
-import styles from './style.js'
-import type { Props } from './types.js'
+import { Button as StyledButton, Spinner, Content } from './styles'
+import type { Props } from './types'
 
 export default function Button(allProps: Props): React$Node {
   let Tag = 'button'
-  const { loading, children, ...props } = allProps
+  const { loading, disabled, children, icon: Icon, ...props } = allProps
 
   if (Object.prototype.hasOwnProperty.call(props, 'to')) {
     Tag = Link
@@ -24,25 +22,29 @@ export default function Button(allProps: Props): React$Node {
     delete props.onClick
   }
 
+  if (disabled) {
+    delete props.to
+    delete props.onClick
+    delete props.href
+  }
+
   return (
-    <Tag
-      disabled={loading}
-      className={css(styles.button, !!loading && styles.button__loading)}
-      {...props}
-    >
+    <StyledButton as={Tag} disabled={disabled || loading} {...props}>
       {/* Implement the spinner for loading activity */}
-      <span className={css(styles.button__spinner, !!loading && styles['button__spinner--active'])}>
+      <Spinner loading={loading}>
         <Spin />
-      </span>
+      </Spinner>
 
       {/* Implement the children (content) of the button */}
-      <span className={css(styles.button__content, !!loading && styles['button__spinner--active'])}>
+      <Content loading={loading}>
+        {Icon && <Icon />}
         {children}
-      </span>
-    </Tag>
+      </Content>
+    </StyledButton>
   )
 }
 
 Button.defaultProps = {
   loading: false,
+  variant: 'default',
 }

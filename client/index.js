@@ -8,9 +8,7 @@ import { store } from 'modules/store'
 import history from 'modules/history'
 import config from 'app/config'
 
-import 'utils/globalStyles'
-
-console.info('Application running in', process.env.NODE_ENV, 'mode.'); // eslint-disable-line
+console.info('Application running in', process.env.NODE_ENV, 'mode.') // eslint-disable-line
 
 // Install the offline plugin runtime to initialize the service workers and app
 // cache for the application

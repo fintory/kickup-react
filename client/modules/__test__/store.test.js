@@ -7,10 +7,10 @@ describe('store', () => {
     expect(store).toHaveProperty('dispatch')
   })
 
-  it('should call window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__', () => {
+  it('should call global.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__', () => {
     /* eslint-disable no-underscore-dangle */
     const compose = jest.fn()
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ = compose
+    global.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ = compose
     configureStore()
     expect(compose).toHaveBeenCalled()
     /* eslint-enable */

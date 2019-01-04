@@ -17,7 +17,7 @@ export const configureStore = (): Store<State, Action> => {
   const baseReducer: Reducer<State, Action> = connectRouter(history)(rootReducer)
   const composeEnhancers: StoreEnhancer<State, Action, *> =
     // eslint-disable-next-line no-underscore-dangle
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+    global.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
   /*
    * Apply the needed middleware and reducers to the store and create the store
