@@ -1,7 +1,7 @@
 // @flow
 import styled, { css } from 'styled-components'
 import { media } from 'styled-bootstrap-grid'
-import rgba from 'polished/lib/color/rgba'
+import { rgba } from 'polished'
 import { colors } from 'constants'
 
 const backgroundColors = {
