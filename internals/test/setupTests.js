@@ -1,14 +1,13 @@
 /* eslint-disable import/no-extraneous-dependencies */
-const enzyme = require('enzyme')
-const Adapter = require('enzyme-adapter-react-16')
-const { JSDOM } = require('jsdom')
+import enzyme from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
+import { JSDOM } from 'jsdom'
 
 enzyme.configure({ adapter: new Adapter() })
 
 // -----------------------------------------------------------------------------
 
 const exposedProperties = ['window', 'navigator', 'document']
-
 const dom = new JSDOM('')
 
 global.document = dom.window.document

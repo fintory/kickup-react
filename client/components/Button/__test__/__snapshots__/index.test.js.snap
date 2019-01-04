@@ -1,0 +1,2024 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> renders as \`Link\` with \`to\` prop 1`] = `
+.c2 {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  -webkit-animation: iVXCSc 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
+  animation: iVXCSc 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
+  border-color: currentColor transparent transparent transparent;
+}
+
+.c3:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+  animation-delay: -0.45s;
+}
+
+.c3:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+.c3:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+  animation-delay: -0.15s;
+}
+
+.c0 {
+  background-color: #2D8EFF;
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  padding: 14px 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  width: auto;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-transition: opacity 100ms linear;
+  transition: opacity 100ms linear;
+}
+
+.c0:not([disabled]):hover {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  position: absolute;
+  top: -28px;
+  height: 28px;
+  left: 0;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c4 {
+  display: inline-block;
+  width: 100%;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c4 svg {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 12px;
+}
+
+@media (min-width:992px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Button
+      loading={false}
+      to="/"
+      variant="default"
+    >
+      <styled.button
+        as={[Function]}
+        disabled={false}
+        to="/"
+        variant="default"
+      >
+        <StyledComponent
+          as={[Function]}
+          disabled={false}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bZQynM",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
+  background-color: ",
+                  [Function],
+                  ";
+  color: ",
+                  [Function],
+                  ";
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  padding: 14px 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  appearance: none;
+  border: 0;
+  width: ",
+                  [Function],
+                  "
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  transition: opacity 100ms linear;
+
+  ",
+                  [Function],
+                  "
+
+  ",
+                  [Function],
+                  "
+
+  :not([disabled]):hover {
+    color: ",
+                  [Function],
+                  ";
+    opacity: 0.9;
+  }
+
+  ",
+                  [Function],
+                  "
+
+  ",
+                  "
+    @media (min-width: ",
+                  [Function],
+                  "px) {
+      ",
+                  "
+    font-size: 14px;
+  ",
+                  "
+    }
+  ",
+                  "
+",
+                ],
+              },
+              "displayName": "styled.button",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bZQynM",
+              "target": "button",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          to="/"
+          variant="default"
+        >
+          <Link
+            className="c0"
+            disabled={false}
+            replace={false}
+            to="/"
+            variant="default"
+          >
+            <a
+              className="c0"
+              disabled={false}
+              href="/"
+              onClick={[Function]}
+              variant="default"
+            >
+              <styled.span
+                loading={false}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gzVnrw",
+                        "isStatic": false,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          "
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition-duration: 250ms;
+  position: absolute;
+  top: -28px;
+  height: 28px;
+  left: 0;
+  transform: ",
+                          [Function],
+                          ";
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-gzVnrw",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  loading={false}
+                >
+                  <span
+                    className="c1"
+                  >
+                    <Spin>
+                      <styled.div>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bdVaJa",
+                                "isStatic": true,
+                                "lastClassName": "c2",
+                                "rules": Array [
+                                  "
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+",
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bdVaJa",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="c2"
+                          >
+                            <styled.span>
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": true,
+                                      "lastClassName": "c3",
+                                      "rules": Array [
+                                        "
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  animation: ",
+                                        Keyframes {
+                                          "id": "sc-keyframes-iVXCSc",
+                                          "inject": [Function],
+                                          "name": "iVXCSc",
+                                          "rules": Array [
+                                            "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                            "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                          ],
+                                          "toString": [Function],
+                                        },
+                                        " 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: currentColor transparent transparent transparent;
+
+  :nth-child(1) {
+    animation-delay: -0.45s;
+  }
+
+  :nth-child(2) {
+    animation-delay: -0.3s;
+  }
+
+  :nth-child(3) {
+    animation-delay: -0.15s;
+  }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.span",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "span",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <span
+                                  className="c3"
+                                />
+                              </StyledComponent>
+                            </styled.span>
+                            <styled.span>
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": true,
+                                      "lastClassName": "c3",
+                                      "rules": Array [
+                                        "
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  animation: ",
+                                        Keyframes {
+                                          "id": "sc-keyframes-iVXCSc",
+                                          "inject": [Function],
+                                          "name": "iVXCSc",
+                                          "rules": Array [
+                                            "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                            "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                          ],
+                                          "toString": [Function],
+                                        },
+                                        " 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: currentColor transparent transparent transparent;
+
+  :nth-child(1) {
+    animation-delay: -0.45s;
+  }
+
+  :nth-child(2) {
+    animation-delay: -0.3s;
+  }
+
+  :nth-child(3) {
+    animation-delay: -0.15s;
+  }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.span",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "span",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <span
+                                  className="c3"
+                                />
+                              </StyledComponent>
+                            </styled.span>
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                    </Spin>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span
+                loading={false}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htoDjs",
+                        "isStatic": false,
+                        "lastClassName": "c4",
+                        "rules": Array [
+                          "
+  display: inline-block;
+  width: 100%;
+  transition-duration: 250ms;
+  transform: ",
+                          [Function],
+                          ";
+
+  svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 12px;
+  }
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htoDjs",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  loading={false}
+                >
+                  <span
+                    className="c4"
+                  >
+                    Button
+                  </span>
+                </StyledComponent>
+              </styled.span>
+            </a>
+          </Link>
+        </StyledComponent>
+      </styled.button>
+    </Button>
+  </Router>
+</BrowserRouter>
+`;
+
+exports[`<Button /> renders as \`a\` with \`href\` prop 1`] = `
+.c2 {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  -webkit-animation: iVXCSc 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
+  animation: iVXCSc 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
+  border-color: currentColor transparent transparent transparent;
+}
+
+.c3:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+  animation-delay: -0.45s;
+}
+
+.c3:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+.c3:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+  animation-delay: -0.15s;
+}
+
+.c0 {
+  background-color: #2D8EFF;
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  padding: 14px 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  width: auto;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-transition: opacity 100ms linear;
+  transition: opacity 100ms linear;
+}
+
+.c0:not([disabled]):hover {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  position: absolute;
+  top: -28px;
+  height: 28px;
+  left: 0;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c4 {
+  display: inline-block;
+  width: 100%;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c4 svg {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 12px;
+}
+
+@media (min-width:992px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+<Button
+  href="/"
+  loading={false}
+  variant="default"
+>
+  <styled.button
+    as="a"
+    disabled={false}
+    href="/"
+    variant="default"
+  >
+    <StyledComponent
+      as="a"
+      disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  background-color: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  padding: 14px 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  appearance: none;
+  border: 0;
+  width: ",
+              [Function],
+              "
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  transition: opacity 100ms linear;
+
+  ",
+              [Function],
+              "
+
+  ",
+              [Function],
+              "
+
+  :not([disabled]):hover {
+    color: ",
+              [Function],
+              ";
+    opacity: 0.9;
+  }
+
+  ",
+              [Function],
+              "
+
+  ",
+              "
+    @media (min-width: ",
+              [Function],
+              "px) {
+      ",
+              "
+    font-size: 14px;
+  ",
+              "
+    }
+  ",
+              "
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      href="/"
+      variant="default"
+    >
+      <a
+        className="c0"
+        disabled={false}
+        href="/"
+      >
+        <styled.span
+          loading={false}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition-duration: 250ms;
+  position: absolute;
+  top: -28px;
+  height: 28px;
+  left: 0;
+  transform: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            loading={false}
+          >
+            <span
+              className="c1"
+            >
+              <Spin>
+                <styled.div>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bdVaJa",
+                          "isStatic": true,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            "
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+",
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bdVaJa",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <div
+                      className="c2"
+                    >
+                      <styled.span>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  animation: ",
+                                  Keyframes {
+                                    "id": "sc-keyframes-iVXCSc",
+                                    "inject": [Function],
+                                    "name": "iVXCSc",
+                                    "rules": Array [
+                                      "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                      "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                    ],
+                                    "toString": [Function],
+                                  },
+                                  " 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: currentColor transparent transparent transparent;
+
+  :nth-child(1) {
+    animation-delay: -0.45s;
+  }
+
+  :nth-child(2) {
+    animation-delay: -0.3s;
+  }
+
+  :nth-child(3) {
+    animation-delay: -0.15s;
+  }
+",
+                                ],
+                              },
+                              "displayName": "styled.span",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bwzfXH",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            className="c3"
+                          />
+                        </StyledComponent>
+                      </styled.span>
+                      <styled.span>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  animation: ",
+                                  Keyframes {
+                                    "id": "sc-keyframes-iVXCSc",
+                                    "inject": [Function],
+                                    "name": "iVXCSc",
+                                    "rules": Array [
+                                      "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                      "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                    ],
+                                    "toString": [Function],
+                                  },
+                                  " 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: currentColor transparent transparent transparent;
+
+  :nth-child(1) {
+    animation-delay: -0.45s;
+  }
+
+  :nth-child(2) {
+    animation-delay: -0.3s;
+  }
+
+  :nth-child(3) {
+    animation-delay: -0.15s;
+  }
+",
+                                ],
+                              },
+                              "displayName": "styled.span",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bwzfXH",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            className="c3"
+                          />
+                        </StyledComponent>
+                      </styled.span>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </Spin>
+            </span>
+          </StyledComponent>
+        </styled.span>
+        <styled.span
+          loading={false}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htoDjs",
+                  "isStatic": false,
+                  "lastClassName": "c4",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 100%;
+  transition-duration: 250ms;
+  transform: ",
+                    [Function],
+                    ";
+
+  svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 12px;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htoDjs",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            loading={false}
+          >
+            <span
+              className="c4"
+            >
+              Button
+            </span>
+          </StyledComponent>
+        </styled.span>
+      </a>
+    </StyledComponent>
+  </styled.button>
+</Button>
+`;
+
+exports[`<Button /> renders as \`button\` with \`onClick\` prop 1`] = `
+.c2 {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  -webkit-animation: iVXCSc 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
+  animation: iVXCSc 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
+  border-color: currentColor transparent transparent transparent;
+}
+
+.c3:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+  animation-delay: -0.45s;
+}
+
+.c3:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+.c3:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+  animation-delay: -0.15s;
+}
+
+.c0 {
+  background-color: #2D8EFF;
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  padding: 14px 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  width: auto;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-transition: opacity 100ms linear;
+  transition: opacity 100ms linear;
+}
+
+.c0:not([disabled]):hover {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  position: absolute;
+  top: -28px;
+  height: 28px;
+  left: 0;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c4 {
+  display: inline-block;
+  width: 100%;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c4 svg {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 12px;
+}
+
+@media (min-width:992px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+<Button
+  loading={false}
+  onClick={[Function]}
+  variant="default"
+>
+  <styled.button
+    as="button"
+    disabled={false}
+    onClick={[Function]}
+    variant="default"
+  >
+    <StyledComponent
+      as="button"
+      disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  background-color: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  padding: 14px 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  appearance: none;
+  border: 0;
+  width: ",
+              [Function],
+              "
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  transition: opacity 100ms linear;
+
+  ",
+              [Function],
+              "
+
+  ",
+              [Function],
+              "
+
+  :not([disabled]):hover {
+    color: ",
+              [Function],
+              ";
+    opacity: 0.9;
+  }
+
+  ",
+              [Function],
+              "
+
+  ",
+              "
+    @media (min-width: ",
+              [Function],
+              "px) {
+      ",
+              "
+    font-size: 14px;
+  ",
+              "
+    }
+  ",
+              "
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onClick={[Function]}
+      variant="default"
+    >
+      <button
+        className="c0"
+        disabled={false}
+        onClick={[Function]}
+      >
+        <styled.span
+          loading={false}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition-duration: 250ms;
+  position: absolute;
+  top: -28px;
+  height: 28px;
+  left: 0;
+  transform: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            loading={false}
+          >
+            <span
+              className="c1"
+            >
+              <Spin>
+                <styled.div>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bdVaJa",
+                          "isStatic": true,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            "
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+",
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bdVaJa",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <div
+                      className="c2"
+                    >
+                      <styled.span>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  animation: ",
+                                  Keyframes {
+                                    "id": "sc-keyframes-iVXCSc",
+                                    "inject": [Function],
+                                    "name": "iVXCSc",
+                                    "rules": Array [
+                                      "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                      "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                    ],
+                                    "toString": [Function],
+                                  },
+                                  " 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: currentColor transparent transparent transparent;
+
+  :nth-child(1) {
+    animation-delay: -0.45s;
+  }
+
+  :nth-child(2) {
+    animation-delay: -0.3s;
+  }
+
+  :nth-child(3) {
+    animation-delay: -0.15s;
+  }
+",
+                                ],
+                              },
+                              "displayName": "styled.span",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bwzfXH",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            className="c3"
+                          />
+                        </StyledComponent>
+                      </styled.span>
+                      <styled.span>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  animation: ",
+                                  Keyframes {
+                                    "id": "sc-keyframes-iVXCSc",
+                                    "inject": [Function],
+                                    "name": "iVXCSc",
+                                    "rules": Array [
+                                      "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                      "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                    ],
+                                    "toString": [Function],
+                                  },
+                                  " 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: currentColor transparent transparent transparent;
+
+  :nth-child(1) {
+    animation-delay: -0.45s;
+  }
+
+  :nth-child(2) {
+    animation-delay: -0.3s;
+  }
+
+  :nth-child(3) {
+    animation-delay: -0.15s;
+  }
+",
+                                ],
+                              },
+                              "displayName": "styled.span",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bwzfXH",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            className="c3"
+                          />
+                        </StyledComponent>
+                      </styled.span>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </Spin>
+            </span>
+          </StyledComponent>
+        </styled.span>
+        <styled.span
+          loading={false}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htoDjs",
+                  "isStatic": false,
+                  "lastClassName": "c4",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 100%;
+  transition-duration: 250ms;
+  transform: ",
+                    [Function],
+                    ";
+
+  svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 12px;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htoDjs",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            loading={false}
+          >
+            <span
+              className="c4"
+            >
+              Button
+            </span>
+          </StyledComponent>
+        </styled.span>
+      </button>
+    </StyledComponent>
+  </styled.button>
+</Button>
+`;
+
+exports[`<Button /> renders as \`button\` without props 1`] = `
+.c2 {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  -webkit-animation: iVXCSc 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
+  animation: iVXCSc 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
+  border-color: currentColor transparent transparent transparent;
+}
+
+.c3:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+  animation-delay: -0.45s;
+}
+
+.c3:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+.c3:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+  animation-delay: -0.15s;
+}
+
+.c0 {
+  background-color: #2D8EFF;
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  padding: 14px 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  width: auto;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-transition: opacity 100ms linear;
+  transition: opacity 100ms linear;
+}
+
+.c0:not([disabled]):hover {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  position: absolute;
+  top: -28px;
+  height: 28px;
+  left: 0;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c4 {
+  display: inline-block;
+  width: 100%;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c4 svg {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 12px;
+}
+
+@media (min-width:992px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+<Button
+  loading={false}
+  variant="default"
+>
+  <styled.button
+    as="button"
+    disabled={false}
+    variant="default"
+  >
+    <StyledComponent
+      as="button"
+      disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  background-color: ",
+              [Function],
+              ";
+  color: ",
+              [Function],
+              ";
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  padding: 14px 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  appearance: none;
+  border: 0;
+  width: ",
+              [Function],
+              "
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  transition: opacity 100ms linear;
+
+  ",
+              [Function],
+              "
+
+  ",
+              [Function],
+              "
+
+  :not([disabled]):hover {
+    color: ",
+              [Function],
+              ";
+    opacity: 0.9;
+  }
+
+  ",
+              [Function],
+              "
+
+  ",
+              "
+    @media (min-width: ",
+              [Function],
+              "px) {
+      ",
+              "
+    font-size: 14px;
+  ",
+              "
+    }
+  ",
+              "
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      variant="default"
+    >
+      <button
+        className="c0"
+        disabled={false}
+      >
+        <styled.span
+          loading={false}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition-duration: 250ms;
+  position: absolute;
+  top: -28px;
+  height: 28px;
+  left: 0;
+  transform: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            loading={false}
+          >
+            <span
+              className="c1"
+            >
+              <Spin>
+                <styled.div>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bdVaJa",
+                          "isStatic": true,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            "
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+",
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bdVaJa",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <div
+                      className="c2"
+                    >
+                      <styled.span>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  animation: ",
+                                  Keyframes {
+                                    "id": "sc-keyframes-iVXCSc",
+                                    "inject": [Function],
+                                    "name": "iVXCSc",
+                                    "rules": Array [
+                                      "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                      "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                    ],
+                                    "toString": [Function],
+                                  },
+                                  " 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: currentColor transparent transparent transparent;
+
+  :nth-child(1) {
+    animation-delay: -0.45s;
+  }
+
+  :nth-child(2) {
+    animation-delay: -0.3s;
+  }
+
+  :nth-child(3) {
+    animation-delay: -0.15s;
+  }
+",
+                                ],
+                              },
+                              "displayName": "styled.span",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bwzfXH",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            className="c3"
+                          />
+                        </StyledComponent>
+                      </styled.span>
+                      <styled.span>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  animation: ",
+                                  Keyframes {
+                                    "id": "sc-keyframes-iVXCSc",
+                                    "inject": [Function],
+                                    "name": "iVXCSc",
+                                    "rules": Array [
+                                      "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                      "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                    ],
+                                    "toString": [Function],
+                                  },
+                                  " 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: currentColor transparent transparent transparent;
+
+  :nth-child(1) {
+    animation-delay: -0.45s;
+  }
+
+  :nth-child(2) {
+    animation-delay: -0.3s;
+  }
+
+  :nth-child(3) {
+    animation-delay: -0.15s;
+  }
+",
+                                ],
+                              },
+                              "displayName": "styled.span",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bwzfXH",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            className="c3"
+                          />
+                        </StyledComponent>
+                      </styled.span>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </Spin>
+            </span>
+          </StyledComponent>
+        </styled.span>
+        <styled.span
+          loading={false}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htoDjs",
+                  "isStatic": false,
+                  "lastClassName": "c4",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: 100%;
+  transition-duration: 250ms;
+  transform: ",
+                    [Function],
+                    ";
+
+  svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 12px;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htoDjs",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            loading={false}
+          >
+            <span
+              className="c4"
+            >
+              Button
+            </span>
+          </StyledComponent>
+        </styled.span>
+      </button>
+    </StyledComponent>
+  </styled.button>
+</Button>
+`;
