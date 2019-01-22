@@ -3916,13 +3916,13 @@ eslint-config-prettier@^3.0.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-import-resolver-babel-module@5.0.0-beta.0:
-  version "5.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/eslint-import-resolver-babel-module/-/eslint-import-resolver-babel-module-5.0.0-beta.0.tgz#ad371645cd9d22f8cbd82a286bcf1e50733ba00e"
-  integrity sha512-GgzfLO0RYYbyj+3R9c5sqYYMK0/1SZ1egm8x2HtJouFUCzqXSN54vmDy65moWRyNbX+I+cy7TUR+nRYzVk3yjA==
+eslint-import-resolver-babel-module@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-import-resolver-babel-module/-/eslint-import-resolver-babel-module-5.0.0.tgz#c976c524a5e5d01dd85fcdaca0c6be6035cbe2b9"
+  integrity sha512-SIdPGAEybpb/xMylMWZHKpWtHlFQfI/v7SI0L5fyDv2No/JU2L5A0y6ZpvxK48w26dTH0x01m9LTXYuG+UCfkg==
   dependencies:
     pkg-up "^2.0.0"
-    resolve "^1.4.0"
+    resolve "^1.8.1"
 
 eslint-import-resolver-node@^0.3.1:
   version "0.3.2"
