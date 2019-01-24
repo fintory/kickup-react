@@ -15,4 +15,11 @@ describe('store', () => {
     expect(compose).toHaveBeenCalled()
     /* eslint-enable */
   })
+
+  it('has all reducers in store', () => {
+    const state = store.getState()
+
+    expect(state).toHaveProperty('router')
+    expect(state).toHaveProperty('tasks')
+  })
 })
