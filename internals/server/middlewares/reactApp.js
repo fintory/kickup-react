@@ -16,7 +16,7 @@ import build from '../../utils/template'
 const manifest = require('../../../static/manifest.json')
 
 // Production middlewares
-module.exports = (req, res): * => {
+export default (req, res): * => {
   // eslint-disable-next-line
   let context = {}
   let html
