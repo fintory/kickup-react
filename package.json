@@ -96,6 +96,7 @@
     "history": "^4.6.1",
     "html-minifier": "^3.5.21",
     "invariant": "^2.2.2",
+    "lodash": "^4.17.11",
     "normalizr": "3.2.4",
     "offline-plugin": "^5.0.5",
     "polished": "^2.0.1",

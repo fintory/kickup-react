@@ -1,5 +1,6 @@
 // @flow
 import React from 'react'
+import omit from 'lodash/omit'
 import { Link } from 'react-router-dom'
 import Spin from 'components/Spin'
 
@@ -8,24 +9,19 @@ import type { Props } from './types'
 
 export default function Button(allProps: Props): React$Node {
   let Tag = 'button'
-  const { loading, disabled, children, icon: Icon, ...props } = allProps
+  const { loading, disabled, children, icon: Icon, ...rest } = allProps
+  let props = rest
 
   if (Object.prototype.hasOwnProperty.call(props, 'to')) {
     Tag = Link
-
-    delete props.href
-    delete props.onClick
+    props = omit(props, ['href', 'onClick'])
   } else if (Object.prototype.hasOwnProperty.call(props, 'href')) {
     Tag = 'a'
-
-    delete props.to
-    delete props.onClick
+    props = omit(props, ['to', 'onClick'])
   }
 
   if (disabled) {
-    delete props.to
-    delete props.onClick
-    delete props.href
+    props = omit(props, ['to', 'href', 'onClick'])
   }
 
   return (

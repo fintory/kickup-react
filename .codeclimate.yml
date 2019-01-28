@@ -9,4 +9,4 @@ plugins:
 exclude_patterns:
   - 'flow-typed/'
   - 'docs/'
-  - '*.test.js'
+  - '**/__test__/*.js'
