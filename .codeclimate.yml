@@ -1,0 +1,11 @@
+---
+version: '2'
+plugins:
+  eslint:
+    enabled: true
+  stylelint:
+    enabled: true
+exclude_patterns:
+  - 'flow-typed/'
+  - 'docs/'
+  - '*.test.js'
