@@ -3,6 +3,14 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import config from 'app/config'
 
+function metaTagFromConfig(name: string): React$Element<'meta'> {
+  return <meta key={name} name={name} content={config(`defaultMetaTags.${name}`)} />
+}
+
+function metaTagsFromConfig(names: Array<string>): Array<React$Element<'meta'>> {
+  return names.map(name => metaTagFromConfig(name))
+}
+
 export default function Head(): React$Element<*> {
   return (
     <Helmet
@@ -11,14 +19,7 @@ export default function Head(): React$Element<*> {
     >
       <html key="html" lang="en" amp />
       {config('defaultMetaTags.enabled') && [
-        <meta key="keywords" name="keywords" content={config('defaultMetaTags.keywords')} />,
-        <meta key="title" name="title" content={config('defaultMetaTags.title')} />,
-        <meta key="robots" name="robots" content={config('defaultMetaTags.robots')} />,
-        <meta
-          key="description"
-          name="description"
-          content={config('defaultMetaTags.description')}
-        />,
+        ...metaTagsFromConfig(['keywords', 'title', 'robots', 'description']),
         config('defaultMetaTags.openGraphEnabled') && [
           <meta key="ogTitle" property="og:title" content={config('defaultMetaTags.title')} />,
           <meta key="ogType" property="og:type" content={config('defaultMetaTags.type')} />,
