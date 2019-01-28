@@ -4,6 +4,8 @@ declare interface Window extends EventTarget, IDBEnvironment {
   analytics: Object;
   __REDUX_DEVTOOLS_EXTENSION_COMPOSE__: (...funcs: Array<Function>) => Function;
 
+  Buffer: *;
+
   +caches: CacheStorage;
   +clientInformation: Navigator;
   +closed: boolean;
@@ -171,3 +173,4 @@ declare interface Window extends EventTarget, IDBEnvironment {
 }
 
 declare var window: Window
+declare var global: Window
