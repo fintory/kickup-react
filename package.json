@@ -15,7 +15,7 @@
     "lint:css": "stylelint ./client/**/styles.js",
     "lint:js": "eslint ./client",
     "flow": "flow",
-    "flow-coverage": "flow-coverage-report --strict-coverage",
+    "flow-coverage": "flow-cov",
     "check-circular-dependencies": "madge --circular client/index.js",
     "start": "NODE_ENV=development webpack-dev-server -d --hot --inline --progress --config internals/webpack/development.config.babel.js",
     "start:server": "NODE_ENV=production node static/server.js",
@@ -96,6 +96,7 @@
     "connected-react-router": "^6.2.2",
     "coveralls": "^3.0.1",
     "express": "^4.15.3",
+    "flow-cov": "^0.1.1",
     "helmet": "^3.12.1",
     "history": "^4.6.1",
     "html-minifier": "^3.5.21",
@@ -162,7 +163,7 @@
       "node_modules/(?!(react-router|react-router-dom|react-router-redux)/)"
     ]
   },
-  "flow-coverage-report": {
+  "flow-cov": {
     "globIncludePatterns": [
       "client/**/*.js"
     ],
@@ -170,10 +171,6 @@
       "node_modules/",
       "client/**/*.test.js"
     ],
-    "reportTypes": [
-      "text",
-      "html"
-    ],
-    "threshold": 92
+    "threshold": 100
   }
 }
