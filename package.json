@@ -169,6 +169,7 @@
     ],
     "globExcludePatterns": [
       "node_modules/",
+      "client/**/styles.js",
       "client/**/*.test.js"
     ],
     "threshold": 92
