@@ -1,17 +1,16 @@
 [![kickup-react](https://s3.eu-central-1.amazonaws.com/github-banner/kickup-react.jpg)](#)
 
 <p align="center">
-<a href='https://greenkeeper.io/'><img src='https://badges.greenkeeper.io/kreativgebiet/kickup-react.svg' alt='Greenkeeper: Enabled' /></a>
-<a href='https://coveralls.io/github/kreativgebiet/kickup-react?branch=master'><img src='https://coveralls.io/repos/github/kreativgebiet/kickup-react/badge.svg?branch=master' alt='Coverage Status' /></a>
-<a href="https://circleci.com/gh/kreativgebiet/kickup-react"><img src="https://img.shields.io/circleci/project/github/kreativgebiet/kickup-react.svg" /></a>
-<a href="https://github.com/kreativgebiet/kickup-react/releases"><img src="https://img.shields.io/github/release/kreativgebiet/kickup-react.svg" /></a>
-<a href="https://david-dm.org/kreativgebiet/kickup-react" target="_blank"><img src="https://img.shields.io/david/kreativgebiet/kickup-react.svg" /></a>
-<a href="https://david-dm.org/kreativgebiet/kickup-react?type=dev" target="_blank"><img src="https://img.shields.io/david/dev/kreativgebiet/kickup-react.svg" /></a>
+<a href='https://coveralls.io/github/fintory/kickup-react?branch=master'><img src='https://coveralls.io/repos/github/fintory/kickup-react/badge.svg?branch=master' alt='Coverage Status' /></a>
+<a href="https://circleci.com/gh/fintory/kickup-react"><img src="https://img.shields.io/circleci/project/github/fintory/kickup-react.svg" /></a>
+<a href="https://github.com/fintory/kickup-react/releases"><img src="https://img.shields.io/github/release/fintory/kickup-react.svg" /></a>
+<a href="https://david-dm.org/fintory/kickup-react" target="_blank"><img src="https://img.shields.io/david/fintory/kickup-react.svg" /></a>
+<a href="https://david-dm.org/fintory/kickup-react?type=dev" target="_blank"><img src="https://img.shields.io/david/dev/fintory/kickup-react.svg" /></a>
 </p>
 
 ## Why another boilerplate?
 
-We at [Kreativgebiet](https://kreativgebiet.com)/[Fintory](https://fintory.com) aim to move fast and always on the bleeding-edge of technology. That's why we created our own boilerplate. Of course, we started with the boilerplate from [TJ](https://github.com/tj/frontend-boilerplate) and continued from where he left.
+We at [Fintory](https://fintory.com) aim to move fast and always on the bleeding-edge of technology. That's why we created our own boilerplate. Of course, we started with the boilerplate from [TJ](https://github.com/tj/frontend-boilerplate) and continued from where he left.
 Since we always want to used bleeding-edge, we needed to have the ability to quickly adapt the boilerplate to our latest needs. That's, why `kickup-react` is here.
 
 ## What's in there?
@@ -54,7 +53,7 @@ npm run build # or yarn build
 
 ## License
 
-> Copyright 2016-2017 Kreativgebiet GmbH
+> Copyright 2016-2018 Kreativgebiet GmbH
 >
 > Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 >
