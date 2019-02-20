@@ -1,7 +1,7 @@
 {
   "parser": "babel-eslint",
-  "extends": ["airbnb", "prettier"],
-  "plugins": ["flowtype", "prettier", "plugin:you-dont-need-momentjs/recommended"],
+  "extends": ["airbnb", "prettier", "plugin:you-dont-need-momentjs/recommended"],
+  "plugins": ["flowtype", "prettier"],
   "env": {
     "browser": true,
     "node": true,
