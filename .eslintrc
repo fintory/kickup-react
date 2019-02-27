@@ -1,7 +1,7 @@
 {
   "parser": "babel-eslint",
   "extends": ["airbnb", "prettier"],
-  "plugins": ["flowtype", "prettier", "reat-hooks"],
+  "plugins": ["flowtype", "prettier", "react-hooks"],
   "env": {
     "browser": true,
     "node": true,
