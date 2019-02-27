@@ -1,7 +1,7 @@
 {
   "parser": "babel-eslint",
   "extends": ["airbnb", "prettier", "plugin:you-dont-need-momentjs/recommended"],
-  "plugins": ["flowtype", "prettier"],
+  "plugins": ["flowtype", "prettier", "react-hooks"],
   "env": {
     "browser": true,
     "node": true,
@@ -30,6 +30,8 @@
         "extensions": [".js"]
       }
     ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
     "import/extensions": "off",
     "import/prefer-default-export": "off",
