@@ -1,7 +1,7 @@
 {
   "parser": "babel-eslint",
   "extends": ["airbnb", "prettier"],
-  "plugins": ["flowtype", "prettier"],
+  "plugins": ["flowtype", "prettier", "reat-hooks"],
   "env": {
     "browser": true,
     "node": true,
@@ -30,6 +30,8 @@
         "extensions": [".js"]
       }
     ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
     "import/extensions": "off",
     "import/prefer-default-export": "off",
@@ -56,9 +58,9 @@
       }
     ],
     "jsx-a11y/anchor-is-valid": ["error", {
-      components: ["Link"],
-      specialLink: ["to"],
-      aspects: ["noHref", "invalidHref", "preferButton"],
+      "components": ["Link"],
+      "specialLink": ["to"],
+      "aspects": ["noHref", "invalidHref", "preferButton"],
     }],
   },
   "settings": {
