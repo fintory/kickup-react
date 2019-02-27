@@ -98,7 +98,7 @@
     "connected-react-router": "^6.2.2",
     "coveralls": "^3.0.1",
     "express": "^4.15.3",
-    "flow-cov": "^0.1.1",
+    "flow-cov": "^0.4.0",
     "helmet": "^3.12.1",
     "history": "^4.6.1",
     "html-minifier": "^3.5.21",
