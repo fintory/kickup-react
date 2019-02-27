@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "extends": ["airbnb", "prettier"],
+  "extends": ["airbnb", "prettier", "plugin:you-dont-need-momentjs/recommended"],
   "plugins": ["flowtype", "prettier", "react-hooks"],
   "env": {
     "browser": true,
@@ -60,8 +60,8 @@
     "jsx-a11y/anchor-is-valid": ["error", {
       "components": ["Link"],
       "specialLink": ["to"],
-      "aspects": ["noHref", "invalidHref", "preferButton"],
-    }],
+      "aspects": ["noHref", "invalidHref", "preferButton"]
+    }]
   },
   "settings": {
     "import/resolver": {

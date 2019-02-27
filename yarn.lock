@@ -4006,6 +4006,13 @@ eslint-plugin-react@^7.11.0:
     jsx-ast-utils "^2.0.1"
     prop-types "^15.6.2"
 
+eslint-plugin-you-dont-need-momentjs@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-you-dont-need-momentjs/-/eslint-plugin-you-dont-need-momentjs-1.4.0.tgz#37635ddc06faf02d675b0d293c32698997944360"
+  integrity sha512-dD3cu3++6uazikGf6bCgjTaMgv7UJU844PZs1VFPe+x4RFXEu9k+0JViKVctZUMjE6b2hjqvfW+2+dCLkNmKxw==
+  dependencies:
+    kebab-case "^1.0.0"
+
 eslint-restricted-globals@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/eslint-restricted-globals/-/eslint-restricted-globals-0.1.1.tgz#35f0d5cbc64c2e3ed62e93b4b1a7af05ba7ed4d7"
@@ -7071,6 +7078,11 @@ jsx-ast-utils@^2.0.1:
   integrity sha1-6AGxs5mF4g//yHtA43SAgOLcrH8=
   dependencies:
     array-includes "^3.0.3"
+
+kebab-case@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/kebab-case/-/kebab-case-1.0.0.tgz#3f9e4990adcad0c686c0e701f7645868f75f91eb"
+  integrity sha1-P55JkK3K0MaGwOcB92RYaPdfkes=
 
 killable@^1.0.0:
   version "1.0.0"
