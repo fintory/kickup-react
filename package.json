@@ -106,7 +106,7 @@
     "lodash": "^4.17.11",
     "normalizr": "3.3.0",
     "offline-plugin": "^5.0.5",
-    "polished": "^2.0.1",
+    "polished": "^4.0.0",
     "prop-types": "^15.6.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
