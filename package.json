@@ -66,7 +66,7 @@
     "fast-glob": "^2.2.6",
     "file-loader": "^3.0.1",
     "flow-annotation-check": "^1.10.1",
-    "flow-bin": "^0.91.0",
+    "flow-bin": "^0.96.0",
     "html-webpack-plugin": "^3.2.0",
     "img-loader": "^3.0.0",
     "ip": "^1.1.5",
