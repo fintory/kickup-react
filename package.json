@@ -101,7 +101,7 @@
     "flow-cov": "^0.4.0",
     "helmet": "^3.12.1",
     "history": "^4.6.1",
-    "html-minifier": "^3.5.21",
+    "html-minifier": "^4.0.0",
     "invariant": "^2.2.2",
     "lodash": "^4.17.11",
     "normalizr": "3.3.0",
