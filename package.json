@@ -113,7 +113,7 @@
     "react-fastclick": "^3.0.2-alpha.1",
     "react-helmet": "^5.0.3",
     "react-hot-loader": "^4.3.11",
-    "react-redux": "^6.0.0",
+    "react-redux": "^7.0.0",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
     "redux": "^4.0.0",
