@@ -103,7 +103,7 @@
     "history": "^4.6.1",
     "html-minifier": "^4.0.0",
     "invariant": "^2.2.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "normalizr": "3.3.0",
     "offline-plugin": "^5.0.5",
     "polished": "^3.0.0",
