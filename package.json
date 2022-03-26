@@ -104,7 +104,7 @@
     "html-minifier": "^4.0.0",
     "invariant": "^2.2.2",
     "lodash": "^4.17.11",
-    "normalizr": "3.3.0",
+    "normalizr": "3.6.2",
     "offline-plugin": "^5.0.5",
     "polished": "^3.0.0",
     "prop-types": "^15.6.1",
