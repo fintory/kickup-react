@@ -97,7 +97,7 @@
   "dependencies": {
     "connected-react-router": "^6.2.2",
     "coveralls": "^3.0.1",
-    "express": "^4.15.3",
+    "express": "^4.17.3",
     "flow-cov": "^0.4.0",
     "helmet": "^3.12.1",
     "history": "^4.6.1",
